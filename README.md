@@ -6,7 +6,7 @@ OpenDEX is a community maintaining the OpenDEX protocol specifications (BOLD, Ba
 
 ## Get Started
 
--> [Read the BOLD protocol specifications](BOLD01.md)
+-> [Read the BOLD protocol specifications](BOLD-01.md)
 
 -> [Contribute to the BOLD specifications](Contribute.md)
 
