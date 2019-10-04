@@ -15,8 +15,9 @@ OpenDEX is a community maintaining the OpenDEX protocol specifications (BOLD, Ba
 ## Features
 * No central point or authority.
 * No middleman.
-* No KYC.
-* Supports individual traders, exchanges - anyone.
+* No KYC. No personal data. No invasion of your privacy.
+* No protocol token.
+* Supports individual traders, exchanges and anyone.
 * Direct, peer-to-peer trading.
 * Order book aggregates orders from the network locally.
 * Orders get matched locally with peer orders from the network.
