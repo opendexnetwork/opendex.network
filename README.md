@@ -2,11 +2,11 @@
 
 ![](/images/OpenDEX_Full_Transparent.png)
 
-OpenDEX is a community maintaining the OpenDEX protocol specifications (BOLD, Basics of Lightning DEX). All software implementations following the protocol comprise the OpenDEX network, a network for unstoppable P2P trading.
+OpenDEX is a community maintaining the OpenDEX protocol specifications (BOLD, Basics of Layer2 DEX). Software implementations following the protocol comprise the OpenDEX network, a network for unstoppable P2P trading.
 
 ## Get Started
 
--> [Read the BOLD protocol specifications](BOLD-01.md)
+-> [Read the BOLD protocol specifications](BOLD-00.md)
 
 -> [Contribute to the BOLD specifications](Contribute.md)
 
