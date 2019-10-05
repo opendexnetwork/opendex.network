@@ -29,3 +29,4 @@ OpenDEX is a community maintaining the OpenDEX protocol specifications (BOLD, Ba
 
 * [Contribute](Contribute.md)
 * Chat with us on [Discord](https://discord.gg/RnXFHpn)
+* Open a BTC ⚡-channel with us for some inbound capacity to accept donations in future: `03be58f20b39b40775ac06058bf94250575e8606c72b58f71baf6af35683acc879@apxuwohv7ti7tbho.onion:9735`
