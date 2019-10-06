@@ -2,7 +2,7 @@
 
 ![](/images/OpenDEX_Full_Transparent.png)
 
-OpenDEX is a community maintaining the OpenDEX protocol specifications (BOLD, Basics of Layer2 DEX). Software implementations following the protocol comprise the OpenDEX network, a network for unstoppable P2P trading. Find the slides from the first public announcement at #hcpp19 in Prague [here](201901005_hcpp19.pdf).
+**OpenDEX is a community maintaining the OpenDEX protocol specifications** called **BOLD** for Basics of L2 DEX. It is not a company or any other sort of legal entity - solely a community of motivated people maintaining some documents on GitHub. All implementations following BOLD, together comprise the OpenDEX network, a network for unstoppable P2P trading. OpenDEX was started because we believe people should start agreeing on one protocol, so that there can be **one global trading network** and not hundreds. Find the slides from the first public announcement at #hcpp19 in Prague [here](201901005_hcpp19.pdf).
 
 ## Get Started
 
