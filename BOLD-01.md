@@ -159,7 +159,7 @@ The `NodeStateUpdate` message is used to tell a peer about an update in the node
     The sender listening TCP addresses for incoming connections
 
     4. repeated string pairs
-    The sender list of trading pair symbols, constructed with the base currency first, followed by a  '/' separator and the quote currency (e.g., [“BTC\LTC”, “BTC\DAI”])
+    The sender list of trading pair symbols, constructed with the base currency first, followed by a  '/' separator and the quote currency (e.g., [“LTC/BTC”, “DAI/BTC”])
 
     5. string raiden_address
     The sender raiden address
