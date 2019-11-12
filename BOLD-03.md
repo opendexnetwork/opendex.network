@@ -50,7 +50,7 @@ The `Order` message is used to tell a peer about a new maker order. It should be
     4. uint64 quantity
     The number of satoshis (or equivalent) to invalidate from the order sum
 
-The `OrderInvalidation` message is used to tell a peer about the invalidation of an existing order quantity. It will allow the peer to remove the order from his local order book. Order invalidation is a usual event which occurs due to order cancellation or filling (by another order). Failing to update about it will result in the peer having a stale order in his local order book, which he might fill and instantiate a swap procedure which is doomed to fail. In this case, the maker order node reputation is be penalized. 
+The `OrderInvalidation` message is used to tell a peer about the invalidation of an existing order or partial order. It will allow the peer to remove the order from his local order book. Order invalidation is a usual event which occurs due to order cancellation or filling (by another order). Failing to update about it will result in the peer having a stale order in his local order book, which he might fill and instantiate a swap procedure which is doomed to fail. In this case, the maker order node reputation is be penalized. 
 
 ###The GetOrders Message (0x08)
 
