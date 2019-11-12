@@ -19,7 +19,7 @@ All messages including initial handshake are framed. A frame carries a single me
 | 4         | length   | uint32, little-endian  | Length of payload in bytes                                                                 |
 | 4         | type     | uint32, little-endian  | The type of the carried message                                                            |
 | 4         | checksum | uint32, little-endian  | The message JSON-serialized sha256 output first 4 bytes, to be used for integrity checks   |
-| ?         | payload  | uchar[]                | The actual data                                                                            |
+| ?         | payload  | bytes                  | The actual data                                                                            |
  
 
 ##### Origin network values
