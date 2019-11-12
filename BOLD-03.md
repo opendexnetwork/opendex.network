@@ -17,7 +17,7 @@ In order to sustain the robustness and censorship resistance property of the net
 	2. Order order
 	The carried order 
 
-This message is used to announce a peer about a new maker order. It should be used only after the order could not be matched locally. 
+The `Order` message is used to tell a peer about a new maker order. It should be used only after the order could not be matched locally. 
 
 ###The Order Type
 
@@ -50,7 +50,7 @@ This message is used to announce a peer about a new maker order. It should be us
     4. uint64 quantity
     The number of satoshis (or equivalent) to invalidate from the order sum
 
-This message is used to announce a peer the invalidation of an existing order quantity. It will allow the peer to remove the order from his local order book. Order invalidation is a usual event which occurs due to order cancellation or filling (by another order). Failing to announce it will result in the peer having a stale order in his local order book, which he might fill and instantiate a swap procedure which is doomed to fail. In this case, the maker order node reputation is be penalized. 
+The `OrderInvalidation` message is used to tell a peer about the invalidation of an existing order quantity. It will allow the peer to remove the order from his local order book. Order invalidation is a usual event which occurs due to order cancellation or filling (by another order). Failing to update about it will result in the peer having a stale order in his local order book, which he might fill and instantiate a swap procedure which is doomed to fail. In this case, the maker order node reputation is be penalized. 
 
 ###The GetOrders Message (0x08)
 
@@ -60,7 +60,7 @@ This message is used to announce a peer the invalidation of an existing order qu
     2. repeated string pair_ids
     The requested orders trading pair symbols, constructed with the base currency first, followed by a  '/' separator and the quote currency (e.g., [“BTC\LTC”, “BTC\DAI”])
 
-This message is used to query a peer for the list of all his open orders for the specified trading pairs. It should be used to initialize the local order book with a snapshot of the peer's existing open orders. Ongoing new orders are expected to get pushed by the peer via the `Order` message, instead of being queried for. 
+The `GetOrders` message is used to query a peer for the list of all his open orders for the specified trading pairs. It should be used to initialize the local order book with a snapshot of the peer's existing open orders. Ongoing new orders are expected to get pushed by the peer via the `Order` message, instead of being queried for. 
 
 ###The Orders Message (0x09)
 
@@ -73,5 +73,5 @@ This message is used to query a peer for the list of all his open orders for the
     3. repeated Order orders
     The list of carried orders
 
-This message is used to respond to the `GetOrders` message.
+The `Orders` message is used to respond to the `GetOrders` message.
 

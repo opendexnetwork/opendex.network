@@ -149,7 +149,7 @@ The `Nodes` message is used to respond to the `GetNodes` message.
 	5. NodeState node_state
 	The updated node state.
 
-The `NodeStateUpdate` message is used to announce a peer about an update in the node state. An example for such update can be the removal of a supported trading pair, listening address, etc. 
+The `NodeStateUpdate` message is used to tell a peer about an update in the node state. An example for such update can be the removal of a supported trading pair, listening address, etc. 
 	
 ###Messages fields custom types
 
