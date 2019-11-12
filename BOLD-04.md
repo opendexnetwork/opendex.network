@@ -1,6 +1,6 @@
 # BOLD #4: Swap Protocol
 
-Once an order match is found on the taker order book, the following swap procedure is expected instantiate. The following is the protocol happy flow: 
+Once an order match is found on the taker order book, a swap procedure is expected to execute. The following is the protocol happy flow: 
 
 1. Taker finds a match
 2. Taker creates the private `r_preimage` and the public `r_hash` for the atomic swap
