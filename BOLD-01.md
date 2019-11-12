@@ -49,7 +49,7 @@ Once received by the destination node, the message origins can be authenticated 
 * `node_pub_key` should match the sender node expected public key (relevant for the initiator node only, which knows the recipient node identity in advance)
 * `sign` should be a valid *secp256k1* signature over sha256 hash of a JSON-serialized msg containing fields 3-7
 
-If valid, the destination node is expected to immediately send the `SessionAck` message back. Otherwise, it may disconnect.
+If valid, the destination node is expected to immediately send the `SessionAck` message back. If not received in reasonable time frame (usually 10 seconds), the sender node may disconnect.
 
 ####The SessionAck Message (0x01)
 
