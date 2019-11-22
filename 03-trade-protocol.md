@@ -2,14 +2,14 @@
 
 ## Overview
 
+OpenDEX does not rely on a central order book or matching engine. Instead, each node on the network maintains its own local order book and matching engine.
+
 Order matching systems ('trade engines') of major exchanges differentiate between two participants: the taker and the maker. A taker ‘fills’ the order of a maker. 
 
-We distinguish between these two types of participants in a trade on OpenDEX:
+Similarly, we distinguish between these two types of participants in a trade on OpenDEX:
 
-* The **Maker**: submits an order which cannot be matched immediately by an existing order in the orderbook. The order is added to the orderbook and propagated to all connected peers. 
+* The **Maker**: submits an order which cannot be matched immediately by an existing order in the order book. The order is added to the order book and propagated to all connected peers. 
 * The **Taker**: issues an order which can immediately be matched with an existing (maker) order in the order book.
-
-In order to sustain the robustness and censorship resistance of the network, OpenDEX lacks a global order book and a centralized matching engine. Instead, each node on the network has its own order book and matching engine. Trading can be limited to a preferred set of trading pairs. In case of a match, the taker order node is expected to instantiate the swap protocol.
 
 ## Order Type
 
@@ -37,7 +37,7 @@ In order to sustain the robustness and censorship resistance of the network, Ope
 	`Order order = 2`
 	The order
 
-The `Order` message is used to tell a peer about a new maker order. It should only be used after the order could not be matched locally. 
+The `Order` message is used to tell a peer about a new maker order. It should only be sent to peers after the order (or part of the order) could not be matched in the local order book.
 
 ### OrderInvalidation Message (0x07)
 
@@ -53,7 +53,7 @@ The `Order` message is used to tell a peer about a new maker order. It should on
     `uint64 quantity = 4`
     The number of satoshis (or equivalent) to invalidate from the order sum
 
-The `OrderInvalidation` message is used to tell a peer about the invalidation of an existing order or partial order. It allows the peer to remove the order from his local order book. Order invalidation is a common event which occurs due to order cancellation or filling (by another order). Failing to send updates about the order will result in peers having a stale order in their local order books, which they may fill and then instantiate a swap procedure which is doomed to fail. In this case, the maker node’s reputation may be penalized. 
+The `OrderInvalidation` message is used to tell a peer about the full or partial invalidation of a previously sent order.. It allows the peer to remove the order from his local order book. Order invalidation is a common event which occurs due to order cancellation or filling (by another node). Failing to send updates about the order will result in peers having a stale order in their local order books. These peers might fill the order and instantiate swap procedures which are doomed to fail. In this case, the maker node’s reputation may be penalized. 
 
 ### The GetOrders Message (0x08)
 
@@ -63,7 +63,7 @@ The `OrderInvalidation` message is used to tell a peer about the invalidation of
     `repeated string pair_ids = 2`
     The requested orders trading pair symbols, constructed with the base currency first, followed by a  '/' separator and the quote currency (e.g., [“LTC/BTC”, “DAI/BTC”])
 
-The `GetOrders` message is used to query a peer for a list of all open orders for the specified trading pairs. It is also used to initialize the local order book with a snapshot of the peer's existing open orders. New orders are expected to get pushed by the peer via the `Order` message, instead of being queried for. 
+The `GetOrders` message is used to query a peer for a list of all open orders for the specified trading pairs. It is mainly used to initialize the local order book with a snapshot of the peer's existing open orders after establishing a connection to the peer. New orders are expected to get pushed by the peer via the `Order` message, instead of being queried for. 
 
 ### The Orders Message (0x09)
 

@@ -10,6 +10,8 @@ Protocol buffers are a language-neutral, platform-neutral, extensible mechanism 
 
 To develop with protocol buffers you will need to install the protocol buffer compiler (to compile `.proto` files) and the protocol buffer runtime for your chosen programming language.
 
+Currently OpenDEX supports Java, Python, Go, Rust, C, C++, Objective-C, C#, Dart, Ruby, Perl, Haskell, Javascript, [and more](https://github.com/protocolbuffers/protobuf/blob/master/docs/third_party.md#programming-languages).
+
 ### The unencrypted message
 
 | Size (bytes) | Name     | Data Type              | Description                                                                                |
@@ -40,6 +42,6 @@ To develop with protocol buffers you will need to install the protocol buffer co
                                                            
 | Size (bytes) | Name       | Data Type              | Description                                                                                |
 |--------------|------------|------------------------|--------------------------------------------------------------------------------------------|
-| 4            | length     | uint32                 | Payload length.                                                                            |
+| 4            | length     | uint32                 | Payload length                                                                             |
 | 4            | type       | uint32                 | Message type                                                                               |
 | length       | payload    | bytes                  | The actual data                                                                            |

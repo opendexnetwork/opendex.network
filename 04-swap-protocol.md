@@ -2,20 +2,20 @@
 
 ## Overview
 
-Once an order match is found in the taker’s order book, a swap procedure should execute. The following is the protocol happy flow: 
+Once an order match is found in the taker’s order book, the swap protocol should be initiated. The current swap protocol assumes that the taker and maker are connected via a payment channel network (e.g. the [Lightning](http://lightning.network/) or [Raiden Network](https://raiden.network/)) with sufficient balance available for the swap. The following is the swap protocol's "happy" flow:
 
-1. Taker finds a match
+1. Taker finds a match, e.g. buying 1 BTC for 10k DAI
 2. Taker creates the private `r_preimage` and the public `r_hash` for the atomic swap
 3. Taker sends the `SwapRequest` message to the maker, which includes `r_hash`
 4. Maker confirms full or partial quantity in the `SwapAccepted` message
-5. Taker starts the swap by dispatching the first-leg HTLCs on the quote currency chain to the maker end, using `r_hash`
-6. Maker is listening for an incoming HTLC on the quote currency chain. Once arrived, he verifies price/quantity, and dispatches the second-leg HTLCs on the base currency chain to the taker end.
-7. Taker is listening for an incoming HTLC on the base currency chain. Once arrived, he releases `r_preimage`. This allow **both** the taker and the maker payment to finalize.
+5. Taker starts the swap by dispatching the first-leg HTLCs on the DAI payment channel to the maker end, using `r_hash`
+6. Maker is listening for an incoming HTLC on the DAI payment channel. Once it arrives he verifies price and quantity and then dispatches the second-leg HTLCs on the BTC payment channel to the taker end.
+7. Taker is listening for an incoming HTLC on the BTC payment channel. Once it arrives he releases `r_preimage`. This allows **both** the taker and the maker payments to finalize.
 9. Taker sends the `SwapCompleted` message to the maker
 
-Possible misbehaviours and their outcome:
+Possible misbehaviors and their outcome:
 
-| Misbehaviour                                                                        | Outcome                                               | Effect on payment channels 
+| Misbehavior                                                                        | Outcome                                               | Effect on payment channels 
 |-------------------------------------------------------------------------------------|-------------------------------------------------------|------------------------------------------------------------|
 | Maker doesn't respond to the `SwapRequest` message                                  | Taker should timeout the swap and penalize the maker  | None                                                       |
 | Taker doesn't start the swap after receiving the `SwapAccepted` message             | Maker should timeout the swap and penalize the taker  | None                                                       |
