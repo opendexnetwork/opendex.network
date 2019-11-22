@@ -4,7 +4,7 @@
 
 OpenDEX does not rely on a central order book or matching engine. Instead, each node on the network maintains its own local order book and matching engine.
 
-Order matching systems ('trade engines') of major exchanges differentiate between two participants: the taker and the maker. A taker ‘fills’ the order of a maker. 
+Order matching systems of major exchanges differentiate between two participants: the taker and the maker. A taker "fills" the order of a maker. 
 
 Similarly, we distinguish between these two types of participants in a trade on OpenDEX:
 
@@ -53,7 +53,7 @@ The `Order` message is used to tell a peer about a new maker order. It should on
     `uint64 quantity = 4`
     The number of satoshis (or equivalent) to invalidate from the order sum
 
-The `OrderInvalidation` message is used to tell a peer about the full or partial invalidation of a previously sent order.. It allows the peer to remove the order from his local order book. Order invalidation is a common event which occurs due to order cancellation or filling (by another node). Failing to send updates about the order will result in peers having a stale order in their local order books. These peers might fill the order and instantiate swap procedures which are doomed to fail. In this case, the maker node’s reputation may be penalized. 
+The `OrderInvalidation` message is used to tell a peer about the full or partial invalidation of a previously sent order. It allows the peer to remove the order from his local order book. Order invalidation is a common event which occurs due to order cancellation or filling (by another node). Failing to send updates about the order will result in peers having a stale order in their local order books. These peers might fill the order and instantiate swap procedures which are doomed to fail. In this case, the maker node’s reputation may be penalized. 
 
 ### The GetOrders Message (0x08)
 
