@@ -2,7 +2,7 @@
 
 ## Overview
 
-The current protocol requires a direct connection between two nodes for for performing updates, trades, and swaps. This section describes how the connection is set up. 
+The current protocol requires a direct connection between two nodes for performing updates, trades, and swaps. This section describes how the connection is set up. 
 
 Each node maintains a persistent **secp256k1** private key with a corresponding public key, node key for short, which uniquely identifies the node in the network. We recommend only allowing manual resets of the private key, for example by deleting a file or database entry. 
 
