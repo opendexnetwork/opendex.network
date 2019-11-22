@@ -69,7 +69,7 @@ Once the receiver of the `SessionInit` message (Bob) has generated his ECDH keys
 
 ## Coordination Messages
 
-These messages are used to maintain the P2P overlay after a session is established via the initial handshake.
+These messages are used to maintain the P2P overlay after a session has been established via the initial handshake.
 
 ### Ping Message (0x04)
 
