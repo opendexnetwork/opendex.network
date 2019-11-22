@@ -1,13 +1,13 @@
 # Summary
 
-* [Introduction](README.md)
+* [Hello!](README.md)
 
 ## Read
-* [BOLD-00](BOLD-00.md)
-* [BOLD-01](BOLD-01.md)
-* [BOLD-02](BOLD-02.md)
-* [BOLD-03](BOLD-03.md)
-* [BOLD-04](BOLD-04.md)
+* [BOLD #0: Introduction](00-introduction.md)
+* [BOLD #1: Message Format](01-message-format.md)
+* [BOLD #2: Peer Protocol](02-peer-protocol.md)
+* [BOLD #3: Trade Protocol](03-trade-protocol.md)
+* [BOLD #4: Swap Protocol](04-swap-protocol.md)
 
 ## Contribute
 * [Contribution Guide](Contribute.md)
