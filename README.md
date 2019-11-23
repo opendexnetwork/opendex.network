@@ -5,7 +5,7 @@
 **OpenDEX is a global network for unstoppable P2P Trading of cryptocurrencies and tokens.** At its core, it is a set of open protocol specifications, called **BOLD** (for Basis of L3 DEX). These specifications ensure that OpenDEX implementations remain compatible and users of different software implementations can trade with each other. **OpenDEX is not a company** or any other sort of legal entity, it is an open community of motivated individuals maintaining the BOLD specifications on GitHub. All node implementations following BOLD form the OpenDEX network. OpenDEX was started because we believe there should be only one DEX, **one global trading network**, not hundreds. Find the slides from the first public announcement at #hcpp19 in Prague [here](201901005_hcpp19.pdf) and the video recording [here](https://www.youtube.com/watch?v=euSr9A6tI90).
 
 ## Get Started
--> [Read the BOLD specifications](BOLD-00.md)
+-> [Read the BOLD specifications](00-introduction.md)
 
 -> [Contribute to the BOLD specifications](Contribute.md)
 
