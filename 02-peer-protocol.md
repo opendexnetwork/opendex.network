@@ -15,7 +15,7 @@ The communication session is established by creating a TCP connection and agreei
 
 The handshake consists of *each side* sending the `SessionInit` message, and waiting to receive the `SessionAck` message back. The first `SessionInit` message is expected to be sent by the initiator.
 
-The initiator must know the recipient's identity (node key) in advance. The recipient learns the initiator's identity by receiving the `SessionAck` message.
+The initiator must know the recipient's identity (node key) in advance. The recipient learns the initiator's identity by receiving the `SessionInit` message.
 
 By the end of the handshake, two distinct shared keys are created, one for each side of the communication, to be used to encrypt all messages during the session's lifetime. 
 
