@@ -19,12 +19,11 @@ Possible misbehaviors and their outcome:
 |-------------------------------------------------------------------------------------|-------------------------------------------------------|------------------------------------------------------------|
 | Maker doesn't respond to the `SwapRequest` message                                  | Taker should timeout the swap and penalize the maker  | None                                                       |
 | Taker doesn't start the swap after receiving the `SwapAccepted` message             | Maker should timeout the swap and penalize the taker  | None                                                       |
-| Maker receives the first-leg HTLC with insufficient amount or incorrect CLTV delta  | Maker should send the taker the `SwapError` message   | Taker funds are locked until HTLC expiration               |
+| Maker receives the first-leg HTLC with insufficient amount or incorrect CLTV delta  | Maker should send the taker a `SwapError` message   | Taker funds are locked until HTLC expiration               |
 | Maker doesn't continue the swap after receiving the first-leg HTLC                  | Taker should timeout the swap and penalize the maker  | Taker funds are locked until HTLC expiration               |
-| Taker receives the second-leg HTLC with insufficient amount or incorrect CLTV delta | Taker should sends the maker the `SwapError` message  | Both Taker and Maker funds are locked until HTLC expiration|
+| Taker receives the second-leg HTLC with insufficient amount or incorrect CLTV delta | Taker should sends the maker a `SwapError` message  | Both Taker and Maker funds are locked until HTLC expiration|
 | Taker doesn't release `r_preimage` after receiving the second-leg HTLC              | Maker should timeout the swap and penalize the taker  | Both Taker and Maker funds are locked until HTLC expiration|
 | Taker doesn't send the `SwapCompleted` message after releasing `r_preimage`         | None; swap has already finalized                      | None                                                       |
-
 ## Swap Protocol
 ### SwapRequest Message (0x0c)
 
@@ -96,7 +95,7 @@ The `SwapComplete` message is sent by the taker to the maker to announce the suc
 
 The `SwapFailed` message can be sent by either side of the swap protocol, at any time, to announce the swap termination.
 
-`failure_reason` is an optional parameter to specify the failure reason:
+`failure_reason` is an optional parameter for specifying the failure reason:
 
 | Failure Reason | Meaning                       | Description                                                                                              |
 |----------------|-------------------------------|----------------------------------------------------------------------------------------------------------|

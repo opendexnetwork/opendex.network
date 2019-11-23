@@ -2,15 +2,15 @@
 
 ## Overview 
 
-All messages sent between nodes have headers. The `SessionInit` and `SessionAck` initial handshake messages are sent unencrypted, and all other messages are encrypted and authenticated using the keys that are generated during the initial handshake.
+All messages sent between nodes have headers. The initial handshake messages are sent unencrypted, and all other messages are encrypted and authenticated using the keys that are generated during the initial handshake.
 
 All messages payloads are serialized using **Protocol Buffers**. 
 
-Protocol buffers are a language-neutral, platform-neutral, extensible mechanism for serializing structured data. You can find [Protobuf's documentation on the Google Developers site](https://developers.google.com/protocol-buffers/).
+Protocol buffers are a language-neutral, platform-neutral, extensible mechanism for serializing structured data. You can find [documentation on the Google Developers site](https://developers.google.com/protocol-buffers/).
 
 To develop with protocol buffers you will need to install the protocol buffer compiler (to compile `.proto` files) and the protocol buffer runtime for your chosen programming language.
 
-Protocol buffers currently support generated code in Java, Python, Go, Rust, C, C++, Objective-C, C#, Dart, Ruby, Perl, Haskell, Javascript, [and more](https://github.com/protocolbuffers/protobuf/blob/master/docs/third_party.md#programming-languages).
+Protocol buffers currently support development in Java, Python, Go, Rust, C, C++, Objective-C, C#, Dart, Ruby, Perl, Haskell, Javascript, [and more](https://github.com/protocolbuffers/protobuf/blob/master/docs/third_party.md#programming-languages).
 
 ### The unencrypted message
 
