@@ -13,4 +13,5 @@
 * [Contribution Guide](Contribute.md)
 
 ## Trade
+* [Exchanges](Exchanges.md)
 * [Implementations](Implementations.md)
