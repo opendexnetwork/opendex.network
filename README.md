@@ -2,14 +2,16 @@
 
 ![](/images/OpenDEX_Full_Transparent.png)
 
-**OpenDEX is a global network for unstoppable P2P Trading of cryptocurrencies and tokens.** At its core, it is a set of open protocol specifications, called **BOLD** (for Basis of L3 DEX). These specifications ensure that OpenDEX implementations remain compatible and users of different software implementations can trade with each other. **OpenDEX is not a company** or any other sort of legal entity, it is an open community of motivated individuals maintaining the BOLD specifications on GitHub. All node implementations following BOLD form the OpenDEX network. OpenDEX was started because we believe there should be only one DEX, **one global trading network**, not hundreds. Find the slides from the first public announcement at #hcpp19 in Prague [here](201901005_hcpp19.pdf) and the video recording [here](https://www.youtube.com/watch?v=euSr9A6tI90).
+**OpenDEX is a global network for unstoppable P2P trading of cryptocurrencies and tokens.** It is built on top of the [Lightning](https://lightning.network/) and [Raiden](https://raiden.network/) network and at its core, it is a set of open protocol specifications, called **BOLD** (for Basis of L3 DEX). These specifications ensure that OpenDEX nodes remain compatible and users of different software implementations are able to trade with each other. **OpenDEX is not a company** or any other sort of legal entity, it is an open community of motivated individuals maintaining the BOLD specifications. OpenDEX was started because we believe there should be only one DEX, **one global trading network**, not hundreds. Find the slides from the first public announcement at #hcpp19 in Prague [here](201901005_hcpp19.pdf) and the video recording [here](https://www.youtube.com/watch?v=euSr9A6tI90).
 
 ## Get Started
 -> [Read the BOLD specifications](00-introduction.md)
 
 -> [Contribute to the BOLD specifications](Contribute.md)
 
--> [Start trading on the OpenDEX Network](Implementations.md)
+-> [Start trading using an OpenDEX-enabled exchange](Exchanges.md) (Recommended)
+
+-> [Start trading directly on the OpenDEX Network](Implementations.md) (Requires some technical knowledge)
 
 ## Features
 * No central authority. No middleman.
@@ -27,4 +29,4 @@
 
 * [Contribute](Contribute.md)
 * Chat with us on [Discord](https://discord.gg/RnXFHpn)
-* Open a BTC ⚡-channel with us for some inbound capacity to accept donations in future: `03be58f20b39b40775ac06058bf94250575e8606c72b58f71baf6af35683acc879@apxuwohv7ti7tbho.onion:9735`
+* Open a BTC ⚡-channel with us for some inbound capacity to accept donations in future (but definitely feel free to push some sats right away ;) `03be58f20b39b40775ac06058bf94250575e8606c72b58f71baf6af35683acc879@apxuwohv7ti7tbho.onion:9735`
