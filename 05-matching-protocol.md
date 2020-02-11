@@ -1,4 +1,4 @@
-# BOLD #5: Order Matching Protocol
+# BOLD #5: Matching Protocol
 
 ## Overview
 Node can choose which matcher match its orders. Anyone can be matcher. Matcher runs orderbook and find matches, when match is found, matcher sends `SwapRequest` message to both party of trade. Orderbook has delay time, which define how much time peer have to accept or decline swap request. Delay is expressed in seconds and delay of local orderbook is 0.
