@@ -8,10 +8,15 @@ Matcher can choose not to take orders from some nodes. As an example if swap nev
 
 ### Matching rules
 If there are in orderbook many makers in same price, matcher should match oldest order first.
+
 Matcher shouldn't match orders where each party is in ban list of other party.
+
 Market orders, should be matched with current best price order.
+
 Limit orders have to be matched with right price.
+
 Post only order shouldn't be placed to orderbook or matched if it could be matched immediatly.
+
 Orders with trigger should be placed orderbook when trigger price is reached, not earlier.
 
 ## Overview
