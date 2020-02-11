@@ -8,6 +8,7 @@
 * [BOLD #2: Peer Protocol](02-peer-protocol.md)
 * [BOLD #3: Trade Protocol](03-trade-protocol.md)
 * [BOLD #4: Swap Protocol](04-swap-protocol.md)
+* [BOLD #5: Matching Protocol](03-matching-protocol.md)
 
 ## Contribute
 * [Contribution Guide](Contribute.md)
