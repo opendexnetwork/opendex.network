@@ -151,7 +151,7 @@ The `Nodes` message is used to respond to the `GetNodes` message.
     `NodeState node_state = 2`
     The updated node state.
 
-The `NodeStateUpdate` message is used to tell a peer about a change in the node state. An example of an update is the removal or addition of a supported trading pair.
+The `NodeStateUpdate` message is used to tell a peer about a change in the node state. An example of an update is the removal or addition of a supported trading pair. Fields where isn't any changes are empty.
 	
 ## Custom types
 
@@ -160,8 +160,8 @@ The `NodeStateUpdate` message is used to tell a peer about a change in the node 
     `repeated Address addresses = 1`
     The sender's listening TCP addresses
 
-    `repeated string pairs = 2`
-    The sender's list of trading pair symbols, constructed with the base currency first, followed by a  '/' separator and the quote currency (e.g., [“LTC/BTC”, “DAI/BTC”])
+    `repeated string orderbooks = 2`
+    The sender's list of orderbook symbols and delays, constructed with the base currency first, followed by a  '/' separator and the quote currency, second '/' separator and the delay. (e.g., [“LTC/BTC/0”, “DAI/BTC/2”])
 
     `string raiden_address = 3`
     The sender's Raiden address
@@ -174,6 +174,10 @@ The `NodeStateUpdate` message is used to tell a peer about a change in the node 
 
     `map<string, LndUris> lnd_uris = 6`
     Mapping between currency symbols to LND listening URIs (e.g., { BTC: ['localhost:30000'], LTC: '['localhost:30030', 'localhost:30031']' })
+
+    `repeated string ban_list = 7`
+    If node don't want to trade with  some nodes, he can add them to banlist. Matcher
+    shouldn't match orders of nodes that are in banlist of each other.
 
 ### Address type
 
@@ -192,3 +196,4 @@ The `NodeStateUpdate` message is used to tell a peer about a change in the node 
     
     `repeated Address addresses = 2`
     The node's listening TCP addresses
+
