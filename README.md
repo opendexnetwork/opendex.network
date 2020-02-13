@@ -26,7 +26,9 @@
 * Supports individual traders, market makers, exchanges, anyone.
 
 ## Support & Community
-
 * [Contribute](Contribute.md)
 * Chat with us on [Discord](https://discord.gg/RnXFHpn)
-* Open a BTC ⚡-channel with us for some inbound capacity to accept donations in future (but definitely feel free to push some sats right away ;) `03be58f20b39b40775ac06058bf94250575e8606c72b58f71baf6af35683acc879@apxuwohv7ti7tbho.onion:9735`
+* Open a BTC ⚡-channel with us:
+```
+03be58f20b39b40775ac06058bf94250575e8606c72b58f71baf6af35683acc879@yjpkcnfkn73xtnmunbxwhxdmcp25cjvqq4veoefdeapp7h7qtrfskfid.onion:9735
+```
