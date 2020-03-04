@@ -4,20 +4,21 @@
 
 Once an order match is found in the taker’s order book, the swap protocol should be initiated. The current swap protocol assumes that the taker and maker are connected via a payment channel network (e.g. the [Lightning](http://lightning.network/) or [Raiden Network](https://raiden.network/)) with sufficient balance available for the swap. The following is the swap protocol's "happy" flow:
 
-1. Taker finds a match, e.g. buying 1 BTC for 10k DAI
-2. Taker creates the private `r_preimage` and the public `r_hash` for the atomic swap
-3. Taker sends the `SwapRequest` message to the maker, which includes `r_hash`
-4. Maker confirms full or partial quantity in the `SwapAccepted` message
-5. Taker starts the swap by dispatching the first-leg HTLCs on the DAI payment channel to the maker end, using `r_hash`
-6. Maker is listening for an incoming HTLC on the DAI payment channel. Once it arrives he verifies price and quantity and then dispatches the second-leg HTLCs on the BTC payment channel to the taker end.
-7. Taker is listening for an incoming HTLC on the BTC payment channel. Once it arrives he releases `r_preimage`. This allows **both** the taker and the maker payments to finalize.
-9. Taker sends the `SwapCompleted` message to the maker
+1. Matcher finds a match, e.g. 1 BTC for 10k DAI 
+2. Matcher sends the `SwapRequest` message to the taker and maker
+3. Taker creates the private `r_preimage` and the public `r_hash` for the atomic swap
+4. Taker sends the `SwapAccepted` message to the maker and matcher, which includes `r_hash`. Or if he unaccept trade he send swapFailed
+5. Maker sends `SwapAccepted` message to matcher and taker.
+6. Taker starts the swap by dispatching the first-leg HTLCs on the DAI payment channel to the maker end, using `r_hash`
+7. Maker is listening for an incoming HTLC on the DAI payment channel. Once it arrives he verifies price and quantity and then dispatches the second-leg HTLCs on the BTC payment channel to the taker end.
+8. Taker is listening for an incoming HTLC on the BTC payment channel. Once it arrives he releases `r_preimage`. This allows **both** the taker and the maker payments to finalize.
+9. Taker sends the `SwapCompleted` message to the maker and matcher
 
 Possible misbehaviors and their outcome:
 
 | Misbehavior                                                                        | Outcome                                               | Effect on payment channels 
 |-------------------------------------------------------------------------------------|-------------------------------------------------------|------------------------------------------------------------|
-| Maker doesn't respond to the `SwapRequest` message                                  | Taker should timeout the swap and penalize the maker  | None                                                       |
+| Owner of order doesn't respond to the `SwapRequest` message from matcher                                 | Swap should be timeouted and matcher and other party of trade should penalize peer that didn't respond  | None                                                       |
 | Taker doesn't start the swap after receiving the `SwapAccepted` message             | Maker should timeout the swap and penalize the taker  | None                                                       |
 | Maker receives the first-leg HTLC with insufficient amount or incorrect CLTV delta  | Maker should send the taker a `SwapError` message   | Taker funds are locked until HTLC expiration               |
 | Maker doesn't continue the swap after receiving the first-leg HTLC                  | Taker should timeout the swap and penalize the maker  | Taker funds are locked until HTLC expiration               |
@@ -39,13 +40,9 @@ Possible misbehaviors and their outcome:
     `string order_id = 4`
     The unique identifier of the maker order
 
-	`string r_hash = 5`
-	The taker preimage hash (in hex)
+    	
 
-	`uint32 taker_cltv_delta = 6`
-    The CLTV delta from the current height that should be used to set the timelock for the final hop when sending to the taker
-
-The `SwapRequest` message is sent by the taker to the maker to start the swap negotiation. 
+The `SwapRequest` message is sent by the matcher to the taker and the maker to start the swap negotiation. 
 
 ### SwapAccepted Message (0x0d)
 
@@ -62,9 +59,9 @@ The `SwapRequest` message is sent by the taker to the maker to start the swap ne
 	The accepted quantity (which may be less than the proposed quantity)
 
 	`uint32 maker_cltv_delta = 5`
-    The CLTV delta from the current height that should be used to set the timelock for the final hop when sending to the maker
+    The CLTV delta from the current height that should be used to set the timelock for the final hop when sending to the maker.
 
-The `SwapAccepted` message is sent by the maker to the taker to accept the swap request.
+The `SwapAccepted` message is sent by either side of the swap protocol to other side and matcher to accept the swap request.
 
 ### SwapComplete Message (0x0e)
 
@@ -74,7 +71,7 @@ The `SwapAccepted` message is sent by the maker to the taker to accept the swap 
 	`string r_hash = 2`
     The taker preimage hash (in hex)
 
-The `SwapComplete` message is sent by the taker to the maker to announce the successful completion of the swap. 
+The `SwapComplete` message is sent by the taker and the maker to each other and matcher to announce the successful completion of the swap
 
 ### SwapFailed Message (0x0f)
 
@@ -93,7 +90,7 @@ The `SwapComplete` message is sent by the taker to the maker to announce the suc
 	`uint32 failure_reason = 5`
 	The failure reason
 
-The `SwapFailed` message can be sent by either side of the swap protocol, at any time, to announce the swap termination.
+The `SwapFailed` message can be sent by either side of the swap protocol to other side and matcher, at any time, to announce the swap termination.
 
 `failure_reason` is an optional parameter for specifying the failure reason:
 
