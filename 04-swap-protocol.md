@@ -9,9 +9,9 @@ Once an order match is found in the taker’s order book, the swap protocol shou
 3. Taker sends the `SwapRequest` message to the maker, which includes `r_hash`
 4. Maker confirms full or partial quantity in the `SwapAccepted` message
 5. Taker starts the swap by dispatching the first-leg HTLCs on the DAI payment channel to the maker end, using `r_hash`
-6. Maker is listening for an incoming HTLC on the DAI payment channel. Once it arrives he verifies price and quantity and then dispatches the second-leg HTLCs on the BTC payment channel to the taker end.
-7. Taker is listening for an incoming HTLC on the BTC payment channel. Once it arrives he releases `r_preimage`. This allows **both** the taker and the maker payments to finalize.
-9. Both nodes locally mark the swap as completed.
+6. Maker listens for an incoming HTLC on the DAI payment channel. Once it arrives he verifies price and quantity and then dispatches the second-leg HTLCs on the BTC payment channel to the taker end.
+7. Taker listens for an incoming HTLC on the BTC payment channel. Once it arrives he releases `r_preimage`. This allows **both** the taker and the maker payments to finalize.
+9. Both nodes locally mark the swap as completed once the respective HTLC is resolved and the payment is finalized.
 
 Possible misbehaviors and their outcome:
 
