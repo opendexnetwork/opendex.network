@@ -163,17 +163,17 @@ The `NodeStateUpdate` message is used to tell a peer about a change in the node 
     `repeated string pairs = 2`
     The sender's list of trading pair symbols, constructed with the base currency first, followed by a  '/' separator and the quote currency (e.g., [“LTC/BTC”, “DAI/BTC”])
 
-    `string raiden_address = 3`
-    The sender's Raiden address
+    `string connext_address = 3`
+    The sender's connext public key (e.g. `indra123abc`)
 
     `map<string, string> lnd_pub_keys = 4`
     The sender's list of LND public keys
 
     `map<string, string> token_identifiers = 5`
-    Mapping between currency symbols to token identifiers such as LND chains or Raiden token contract address (e.g., { BTC: 'bitcoin-testnet', LTC: 'litecoin-testnet' })
+    Mapping between currency symbols and chain identifiers or ETH-ERC20 token contract addresses (e.g., { BTC: 'bitcoin-mainnet', LTC: 'litecoin-mainnet', ETH:,'0x0000000000000000000000000000000000000000' })
 
     `map<string, LndUris> lnd_uris = 6`
-    Mapping between currency symbols to LND listening URIs (e.g., { BTC: ['localhost:30000'], LTC: '['localhost:30030', 'localhost:30031']' })
+    Mapping between currency symbols to LND listening URIs (should be reachable from the internet e.g., { BTC: ['2w526cyown43ovsvsojdowheqmukbykrexzyccp6v6j4pm5ve3hjzrid.onion:9735'], LTC: '['lndltc.kilrau.com:9735', 'qiyibtczmuhutusmygvc2injxl7v4yfcodwj3pft63edycud5gr3giad.onion:10735']' })
 
 ### Address type
 
