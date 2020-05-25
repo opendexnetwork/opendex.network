@@ -2,7 +2,7 @@
 
 ## Overview
 
-Once an order match is found in the taker’s order book, the swap protocol should be initiated. The current swap protocol assumes that the taker and maker are connected via a payment channel network (e.g. the [Lightning](http://lightning.network/) or [Connext Network](https://connext.network/)) with sufficient balance available for the swap. The following is the swap protocol's "happy" flow:
+Once an order match is found in the taker’s order book, the swap protocol should be initiated. The current swap protocol assumes that the taker and maker are connected via a payment channel network (e.g. [Lightning](http://lightning.network/) or [Connext](https://connext.network/)) with sufficient balance available for the swap. The following is the swap protocol's "happy" flow:
 
 1. Taker finds a match, e.g. buying 1 BTC for 10k DAI
 2. Taker creates the private `r_preimage` and the public `r_hash` for the atomic swap
