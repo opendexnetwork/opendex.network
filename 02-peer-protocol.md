@@ -163,8 +163,8 @@ The `NodeStateUpdate` message is used to tell a peer about a change in the node 
     `repeated string pairs = 2`
     The sender's list of trading pair symbols, constructed with the base currency first, followed by a  '/' separator and the quote currency (e.g., [“LTC/BTC”, “DAI/BTC”])
 
-    `string raiden_address = 3`
-    The sender's Raiden address
+    `string connext_address = 3`
+    The sender's Connext address
 
     `map<string, string> lnd_pub_keys = 4`
     The sender's list of LND public keys
