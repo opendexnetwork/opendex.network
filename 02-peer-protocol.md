@@ -164,7 +164,7 @@ The `NodeStateUpdate` message is used to tell a peer about a change in the node 
     The sender's list of trading pair symbols, constructed with the base currency first, followed by a  '/' separator and the quote currency (e.g., [“LTC/BTC”, “DAI/BTC”])
 
     `string connext_identifier = 3`
-    The sender's connext address
+    The sender's connext identifier (e.g. indra565S4X3vjBiZXTCGM8K5T3Shu2MLD5wrvi9fuDJmtVuw24kKiJ)
 
     `map<string, string> lnd_pub_keys = 4`
     The sender's list of LND public keys
