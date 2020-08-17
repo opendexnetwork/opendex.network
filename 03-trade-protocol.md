@@ -27,6 +27,9 @@ Similarly, we distinguish between these two types of participants in a trade on 
 
     `bool is_buy = 5`
     Whether the order is a buy (true) or a sell (false)
+    
+    `string replace_order_id = 6`
+    The id of an order that this order is replacing, the specified order should be removed
 
 ## Trade Protocol
 ### Order Message (0x06)
