@@ -5,4 +5,4 @@ Hello, friend! These Basis of Layer-3 DEX (BOLD) documents describe a protocol f
 - native cross-chain capability
 - off-chain settlement
 
- Nodes running implementations of the protocol comprise OpenDEX, the decentralized exchange network.
+Nodes running implementations of the protocol comprise OpenDEX, the decentralized exchange network.
