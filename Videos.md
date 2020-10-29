@@ -13,7 +13,8 @@ In our first community call we covered the **Why?, How?, What?** along with some
 
 ### Community Call #2 (2020-10-28)
 
-Upcoming.
+In our second community call we saw a demo of the first iteration of XUD Explorer, a Desktop App UI for OpenDEX and discussion of various topics, such as hot wallets - the risk exposure one faces when using payment channel networks like the Lightning Network. [Video](https://youtu.be/rC7zlCSuVEc)
+
 
 ## Misc
 
