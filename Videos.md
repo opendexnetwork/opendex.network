@@ -15,6 +15,9 @@ In our first community call we covered the **Why?, How?, What?** along with some
 
 In our second community call we saw a demo of the first iteration of XUD Explorer, a Desktop App UI for OpenDEX and discussion of various topics, such as hot wallets - the risk exposure one faces when using payment channel networks like the Lightning Network. [Video](https://youtu.be/rC7zlCSuVEc)
 
+### Community Call #3 (2020-11-04)
+
+In this community call we discussed using multiple channels to settle one trade (will be demoed next week) and and saw an alpha demo of the upcoming 1.1.0 release of XUD Explorer featuring full setup on Windows. This version takes Windows users from 0 to "deposit funds" in a couple of Minutes, seamlessly installing docker as part of the installation flow 🔥 [Video](https://youtu.be/IBrVkzyCwb4)
 
 ## Misc
 
