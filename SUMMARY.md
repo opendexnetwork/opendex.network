@@ -1,5 +1,4 @@
 # Summary
-
 * [Hello!](README.md)
 
 ## Read
@@ -9,7 +8,8 @@
 * [BOLD #3: Trade Protocol](03-trade-protocol.md)
 * [BOLD #4: Swap Protocol](04-swap-protocol.md)
 
-## Contribute
+## Community
+* [Videos](Videos.md)
 * [Contribution Guide](Contribute.md)
 
 ## Trade
