@@ -19,6 +19,14 @@ In our second community call we saw a demo of the first iteration of XUD Explore
 
 In this community call we discussed using multiple channels to settle one trade (will be demoed next week) and and saw an alpha demo of the upcoming 1.1.0 release of XUD Explorer featuring full setup on Windows. This version takes Windows users from 0 to "deposit funds" in a couple of Minutes, seamlessly installing docker as part of the installation flow 🔥 [Video](https://youtu.be/IBrVkzyCwb4)
 
+### Community Call #4 (2020-11-11)
+
+In this community call we discussed Lightning Pool, the Infura downtime and Ethereum chain split and saw a pretty cool demo of the upcoming ⚡-BTC/USDT swaps on boltz.exchange 🔥 [Video](https://youtu.be/iNw5d1rZUqY)
+
+### Community Call #5 (2020-11-18)
+
+In this community call we discussed lnmarkets(https://lnmarkets.com), the proactive miner initiative for activation of taproot on bitcoin (https://taprootactivation.com) and saw and saw a first demo of multi-channel trades via xud ⚡ [Video](https://youtu.be/tt_TYVft4dQ)
+
 ## Misc
 
 ### First public announcement (2019-10-05)
