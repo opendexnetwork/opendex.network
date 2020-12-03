@@ -33,7 +33,7 @@ In in this special edition of our community call, we dived into "Running a bitco
 
 ### Community Call #7 (2020-12-02)
 
-In this community call, we touched on the recent happenings eth2 launch and [Breez'es great overview of use cases matching lightning's strengths](https://medium.com/breez-technology/waypoints-on-the-road-to-lightnings-mass-adoption-88e4148a2c3c) and learned in-depth about the recently launched BTC/USDT swaps on [boltz.exchange](https://boltz.exchange) 🔥 [Video](https://youtu.be/_KbbTmMA8WM) &  [slides](https://github.com/BoltzExchange/slides/blob/master/boltzopendex.pdf)
+In this community call, we touched on the recent happenings eth2 launch and [Breez'es great overview of lightning use cases](https://medium.com/breez-technology/waypoints-on-the-road-to-lightnings-mass-adoption-88e4148a2c3c) and learned in-depth about the recently launched BTC/USDT swaps on [boltz.exchange](https://boltz.exchange) 🔥 [Video](https://youtu.be/_KbbTmMA8WM) &  [slides](https://github.com/BoltzExchange/slides/blob/master/boltzopendex.pdf)
 
 ## Misc
 
