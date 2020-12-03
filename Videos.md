@@ -21,15 +21,19 @@ In this community call we discussed using multiple channels to settle one trade 
 
 ### Community Call #4 (2020-11-11)
 
-In this community call we discussed Lightning Pool, the Infura downtime and Ethereum chain split and saw a pretty cool demo of the upcoming ⚡-BTC/USDT swaps on boltz.exchange 🔥 [Video](https://youtu.be/iNw5d1rZUqY)
+In this community call we discussed Lightning Pool, the Infura downtime and Ethereum chain split and saw a pretty cool demo of the upcoming ⚡-BTC/USDT swaps on [boltz.exchange](https://boltz.exchange) 🔥 [Video](https://youtu.be/iNw5d1rZUqY)
 
 ### Community Call #5 (2020-11-18)
 
-In this community call we discussed lnmarkets(https://lnmarkets.com), the proactive miner initiative for activation of taproot on bitcoin (https://taprootactivation.com) and saw and saw a first demo of multi-channel trades via xud. [Video](https://youtu.be/tt_TYVft4dQ)
+In this community call we discussed [lnmarkets](https://lnmarkets.com), the proactive [miner initiative for activation of taproot on bitcoin](https://taprootactivation.com) and saw and saw a first demo of multi-channel trades via xud. [Video](https://youtu.be/tt_TYVft4dQ)
 
 ### Community Call #6 (2020-11-25)
 
-In in this special edition of our community call, we dived into "Running a bitcoin node" and looked at three projects helping to make this quest easier with a Raspberry Pi: RaspiBlitz (https://raspiblitz.org/), MyNode (https://mynodebtc.com/) & Umbrel (https://getumbrel.com/). We had a closer look at Umbrel and discussed how it achieves great UX. We learned that Exchange Union is working on an integration with RaspiBlitz already and that we can expect to access OpenDEX seamlessly via above projects in the future. [Video](https://youtu.be/xi0sXZgG9NE) &  [slides](/slides/20201125_OpenDEX_Community_Call.pdf)
+In in this special edition of our community call, we dived into "Running a bitcoin node" and looked at three projects helping to make this quest easier with a Raspberry Pi: [RaspiBlitz](https://raspiblitz.org/), [MyNode](https://mynodebtc.com/) & [Umbrel](https://getumbrel.com/). We had a closer look at Umbrel and discussed how it achieves great UX. We learned that Exchange Union is working on an integration with RaspiBlitz already and that we can expect to access OpenDEX seamlessly via above projects in the future. [Video](https://youtu.be/xi0sXZgG9NE) &  [slides](/slides/20201125_OpenDEX_Community_Call.pdf)
+
+### Community Call #7 (2020-12-02)
+
+In this community call, we touched on the recent happenings eth2 launch and [Breez'es great overview of lightning use cases](https://medium.com/breez-technology/waypoints-on-the-road-to-lightnings-mass-adoption-88e4148a2c3c) and learned in-depth about the recently launched BTC/USDT swaps on [boltz.exchange](https://boltz.exchange) 🔥 [Video](https://youtu.be/_KbbTmMA8WM) &  [slides](https://github.com/BoltzExchange/slides/blob/master/boltzopendex.pdf)
 
 ## Misc
 
