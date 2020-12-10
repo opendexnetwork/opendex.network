@@ -35,6 +35,10 @@ In in this special edition of our community call, we dived into "Running a bitco
 
 In this community call, we touched on the recent happenings eth2 launch and [Breez'es great overview of lightning use cases](https://medium.com/breez-technology/waypoints-on-the-road-to-lightnings-mass-adoption-88e4148a2c3c) and learned in-depth about the recently launched BTC/USDT swaps on [boltz.exchange](https://boltz.exchange) 🔥 [Video](https://youtu.be/_KbbTmMA8WM) &  [slides](https://github.com/BoltzExchange/slides/blob/master/boltzopendex.pdf)
 
+### Community Call #8 (2020-12-09)
+
+In this community call, we touched on the events of the week and then went on discussing the upcoming release of the next connext protocol version called "vector" (https://github.com/connext/vector), which Exchange Union expects to move to as soon as it's available (2020ish). We also have seen a demo of the upcoming 1.2.0 XUD UI release (and heard a range of excuses why it's taking so long, but also some decent commitment to deliver until next week). [Video](https://youtu.be/oBoDNGI8f3w)
+
 ## Misc
 
 ### First public announcement (2019-10-05)
