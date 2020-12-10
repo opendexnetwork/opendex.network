@@ -37,7 +37,7 @@ In this community call, we touched on the recent happenings eth2 launch and [Bre
 
 ### Community Call #8 (2020-12-09)
 
-In this community call, we touched on the events of the week and then went on discussing the upcoming release of the next connext protocol version called "vector" (https://github.com/connext/vector), which Exchange Union expects to move to as soon as its available (2020ish) and have seen a demo of the upcoming 1.2.0 XUD UI release (and heard a range of excuses why it's taking so long, but also some decent commitment to deliver until next week). [Video](https://youtu.be/oBoDNGI8f3w)
+In this community call, we touched on the events of the week and then went on discussing the upcoming release of the next connext protocol version called "vector" (https://github.com/connext/vector), which Exchange Union expects to move to as soon as it's available (2020ish). We also have seen a demo of the upcoming 1.2.0 XUD UI release (and heard a range of excuses why it's taking so long, but also some decent commitment to deliver until next week). [Video](https://youtu.be/oBoDNGI8f3w)
 
 ## Misc
 
