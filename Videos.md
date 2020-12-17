@@ -39,6 +39,10 @@ In this community call, we touched on the recent happenings eth2 launch and [Bre
 
 In this community call, we touched on the events of the week and then went on discussing the upcoming release of the next connext protocol version called "vector" (https://github.com/connext/vector), which Exchange Union expects to move to as soon as it's available (2020ish). We also have seen a demo of the upcoming 1.2.0 XUD UI release (and heard a range of excuses why it's taking so long, but also some decent commitment to deliver until next week). [Video](https://youtu.be/oBoDNGI8f3w)
 
+### Community Call #9 (2020-12-16)
+
+In this community call, we talked about the last edition of the amazing [Bitcoin Optech Newsletter](https://bitcoinops.org/en/newsletters/2020/12/16/), about the upcoming [0.12.0 LND release](https://github.com/lightningnetwork/lnd/releases/tag/v0.12.0-beta.rc1) and development updates from Boltz & Exchange Union with special focus on the new [1.2.0 XUD UI release](https://github.com/ExchangeUnion/xud-ui/releases/tag/v1.2.0) 🌈 [Video](https://youtu.be/QTx7U6fPe_k)
+
 ## Misc
 
 ### First public announcement (2019-10-05)
