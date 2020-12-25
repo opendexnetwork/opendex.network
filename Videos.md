@@ -43,6 +43,10 @@ In this community call, we touched on the events of the week and then went on di
 
 In this community call, we talked about the last edition of the amazing [Bitcoin Optech Newsletter](https://bitcoinops.org/en/newsletters/2020/12/16/), about the upcoming [0.12.0 LND release](https://github.com/lightningnetwork/lnd/releases/tag/v0.12.0-beta.rc1) and development updates from Boltz & Exchange Union with special focus on the new [1.2.0 XUD UI release](https://github.com/ExchangeUnion/xud-ui/releases/tag/v1.2.0) 🌈 [Video](https://youtu.be/QTx7U6fPe_k)
 
+### Community Call #10 (2020-12-23)
+
+In this Christmas Edition of our community call, we clarified that the recent [customer data dump](https://www.ledger.com/message-ledgers-ceo-data-leak) probably should be the end of Ledger, the recent [SEC charge](https://www.sec.gov/news/press-release/2020-338) probably the end of Ripple and, more importantly, saw an end-to-end demo of a deposit with XUD UI & went through a pretty interesting OpenDEX Q&A session, touching on the different stakeholders involved, why no token and more. [Video](https://youtu.be/CFwnbgoMMBM)
+
 ## Misc
 
 ### First public announcement (2019-10-05)
