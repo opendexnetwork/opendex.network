@@ -47,6 +47,10 @@ In this community call, we talked about the last edition of the amazing [Bitcoin
 
 In this Christmas Edition of our community call, we clarified that the recent [customer data dump](https://www.ledger.com/message-ledgers-ceo-data-leak) probably should be the end of Ledger, the recent [SEC charge](https://www.sec.gov/news/press-release/2020-338) probably the end of Ripple and, more importantly, saw an end-to-end demo of a deposit with XUD UI & went through a pretty interesting OpenDEX Q&A session, touching on the different stakeholders involved, why no token and more. [Video](https://youtu.be/CFwnbgoMMBM)
 
+### Community Call #11 (2021-01-13)
+
+In this community call, we laughed hard at ECB's Christina Lagarde's call for a global Bitcoin regulation because of the ["funny business" conducted](https://www.reuters.com/article/us-crypto-currency-ecb/ecbs-lagarde-calls-for-regulating-bitcoins-funny-business-idUSKBN29I1B1), how we can learn from [Wasabi's fallback mechanisms preventing being impacted by the recent attack on Tor Consensus](https://blog.wasabiwallet.io/wasabi-wallet-tor-consensus/) and touched on an open PR [removing all remaining JSON encoding from the OpenDEX protocol](https://github.com/ExchangeUnion/xud/pull/2061#pullrequestreview-567439995) moving everything cleanly to protobuf. Last but not least we saw a pretty neat sneak peak of the upcoming trading feature in XUD UI. [Video](https://youtu.be/CpeFQqFKksg)
+
 ## Misc
 
 ### First public announcement (2019-10-05)
