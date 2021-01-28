@@ -51,6 +51,10 @@ In this Christmas Edition of our community call, we clarified that the recent [c
 
 In this community call, we laughed hard at ECB's Christina Lagarde's call for a global Bitcoin regulation because of the ["funny business" conducted](https://www.reuters.com/article/us-crypto-currency-ecb/ecbs-lagarde-calls-for-regulating-bitcoins-funny-business-idUSKBN29I1B1), how we can learn from [Wasabi's fallback mechanisms preventing being impacted by the recent attack on Tor Consensus](https://blog.wasabiwallet.io/wasabi-wallet-tor-consensus/) and touched on an open PR [removing all remaining JSON encoding from the OpenDEX protocol](https://github.com/ExchangeUnion/xud/pull/2061#pullrequestreview-567439995) moving everything cleanly to protobuf. Last but not least we saw a pretty neat sneak peak of the upcoming trading feature in XUD UI. [Video](https://youtu.be/CpeFQqFKksg)
 
+### Community Call #12 (2021-01-27)
+
+In this community call, we talked extensively about `r/wallstreetbets` amazing coup against wallstreet causing hedge funds getting liquidated for their overleveraged short positions on [GameStop's stock](https://finance.yahoo.com/quote/GME), that the response of "trading restrictions" of AmeriTrade & others has to lead to decentralized trading networks like OpenDEX to take off, Bitcoin as treasury for non-profits and the new releases of lnd & connext. Finally, we saw a demo of a feature-complete Trading view in XUD UI. [Video](https://youtu.be/tL5FRf-QvH8)
+
 ## Misc
 
 ### First public announcement (2019-10-05)
