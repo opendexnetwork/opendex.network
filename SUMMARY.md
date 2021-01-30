@@ -9,6 +9,7 @@
 * [BOLD \#2: Peer Protocol](read/02-peer-protocol.md)
 * [BOLD \#3: Trade Protocol](read/03-trade-protocol.md)
 * [BOLD \#4: Swap Protocol](read/04-swap-protocol.md)
+* [The Bitcoin Whitepaper](https://github.com/opendexnetwork/opendex/raw/master/.gitbook/assets/bitcoin.pdf)
 
 ## Community
 
