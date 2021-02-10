@@ -56,6 +56,10 @@ In this community call, we laughed hard at ECB's Christina Lagarde's call for a 
 
 In this community call, we talked extensively about `r/wallstreetbets` amazing coup against wallstreet causing hedge funds getting liquidated for their overleveraged short positions on [GameStop's stock](https://finance.yahoo.com/quote/GME), that the response of "trading restrictions" of AmeriTrade & others has to lead to decentralized trading networks like OpenDEX to take off, Bitcoin as treasury for non-profits and the new releases of lnd & connext. Finally, we saw a demo of a feature-complete Trading view in XUD UI. [Video](https://youtu.be/tL5FRf-QvH8)
 
+### Community Call \#13 \(2021-02-03\)
+
+In this community call, we announced our move from "Exchange Union" to ["OpenDEX"](https://opendex.network), which unifies everything under one name and should avoid confusion down the road. This also comes with a change in product focus, how we are funded, team members and more. The gist is: we are shifting focus towards UX & end-user facing trading products while keeping our core atomic-swap-DNA (the user is always in control of funds) & OpenDEX will become even more open going forward. If you are interested in day-to-day updates and what we are working on, please join our [Discord server](https://discord.gg/RnXFHpn) and *watch* our [GitHub repositories](https://github.com/opendexnetwork). We also touched on [Microstrategy sharing the "Bitcoin for Corporations"](https://www.microstrategy.com/en/resources/events/world-2021/bitcoin-summit) playbook, [Elon on Clubhouse](https://twitter.com/MMCrypto/status/1356131319424704513?s=09) & Bisq's new ["Cash by Mail"](https://bisq.wiki/Cash_by_mail) feature. [Video](https://youtu.be/Xha5l6t19Nk)
+
 ## Misc
 
 ### First public announcement \(2019-10-05\)
