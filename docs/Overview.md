@@ -4,13 +4,13 @@ GRAPHIC
 
 ## Get Started Running a Node
 
-[👉 as **Liquidity Provider**](Liquidity%20Provider%20Guide.md), earning via automated arbitrage between external exchanges and OpenDEX
+👉 as [**Liquidity Provider**](Liquidity%20Provider%20Guide.md), earning via automated arbitrage between external exchanges and OpenDEX
 
-[👉 as **Swap Provider**](Swap%20Provider%20Guide.md), sourcing liquidity on OpenDEX
+👉 as [**Swap Provider**](Swap%20Provider%20Guide.md), sourcing liquidity on OpenDEX
 
-[👉 as **Day Trader**](Day%20Trader%20Guide.md), trading instantaneously while preserving full control & privacy
+👉 as [**Day Trader**](Day%20Trader%20Guide.md), trading instantaneously while preserving full control & privacy
 
-[👉 as **Developer**](Developer%20Guide.md), contributing or building on top of `opendexd`
+👉 as [**Developer**](Developer%20Guide.md), contributing or building on top of `opendexd`
 
 ## API Docs
 
