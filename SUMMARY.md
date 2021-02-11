@@ -12,4 +12,4 @@
 * [💸-Liquidity Provider](docs/Liquidity%20Provider%20Guide.md)
 * [📜-BOLD Protocol](bold/00-introduction.md)
 * [🤖-API Docs](https://api.opendex.network)
-* [👑-₿itcoin Whitepaper](https://raw.githubusercontent.com/opendexnetwork/opendex/master/.gitbook/assets/bitcoin.pdf)
+* [👑-Bitcoin Whitepaper](https://raw.githubusercontent.com/opendexnetwork/opendex/master/.gitbook/assets/bitcoin.pdf)
