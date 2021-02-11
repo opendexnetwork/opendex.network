@@ -1,16 +1,16 @@
-The OpenDEX Daemon ([`opendexd`](https://github.com/opendexnetwork/opendexd)) is the reference implementation powering OpenDEX.
+The OpenDEX Daemon ([`opendexd`](https://github.com/opendexnetwork/opendexd)) is the reference implementation powering OpenDEX. OpenDEX features three distinct sets of participants: liquidity providers, day-traders, swap providers and end-users of swap providers 
 
 ## Get Started
 
--> [Get started as **Liquidity Provider**](Liquidity%20Provider%20Guide.md), providing liquidity by arbitraging with external exchanges making a profit
+-> [Get started as **Liquidity Provider**](Liquidity%20Provider%20Guide.md), earning by automated arbitrage with external exchanges
 
--> [Get started as **Day Trader**](Day%20Trader%20Guide.md), buying and selling cryptocurrency preserving privacy & without counterparty risk
+-> [Get started as **Day Trader**](Day%20Trader%20Guide.md), trading instantaneously while preserving privacy & control
 
--> [Get started as **Exchange Operator**](), integrating OpenDEX to source liquidity **(Guide coming soon!)**
+-> [Get started as **Swap Provider**](Swap%20Provider%20Guide.md), sourcing liquidity in 
 
 -> [Get started as **Developer**](Developer%20Guide.md), contributing or building on top of `opendexd`
 
-![opendexd orderbook](/images/orderbook.png)
+![opendexd orderbook](/docs/images/orderbook.png)
 
 ## Incentives
 * Liquidity Providers make profits by arbitraging between external exchanges and OpenDEX.
@@ -23,7 +23,7 @@ The daemon has been designed to be as developer friendly as possible in order to
 
 ## Support & Community
 * [Contribute](Contribute.md)!
-* Support, general questions and development-related discussions are welcome on our [Discord](https://discord.gg/YgDhMSn)!
+* Support, general questions and development-related discussions are welcome on our [Discord](https://discord.gg/RnXFHpn)!
 
 ## Help us to improve!
 
