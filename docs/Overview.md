@@ -14,8 +14,7 @@ GRAPHIC
 
 ## API Docs
 
-The daemon has been designed to be as developer friendly as possible in order to facilitate application development on top of `opendexd`.
-* [api.opendex.network](https://api.opendex.network): The automatically generated gRPC API documentation
+The OpenDEX Daemon has been designed to be as developer friendly as possible in order to facilitate application development on top of `opendexd`. Find the automatically generated gRPC API documentation at [api.opendex.network](https://api.opendex.network).
 
 ## Support & Community
 
