@@ -8,9 +8,7 @@
 
 -> [**Swap privately & securely** via the easy-to-use webapp](https://boltz.exchange/)
 
--> [**Provide liquidity & earn** by running a lp node](docs/Overview.md)
-
--> [How It Works](docs/How%20It%20Works.md)
+-> [**Provide liquidity & earn** by running a node](docs/Overview.md)
 
 ## OpenDEX Features
 
