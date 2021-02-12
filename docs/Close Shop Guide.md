@@ -1,10 +1,10 @@
-This guide is written for anyone looking to "close shop", to withdraw all funds from an xud environment.
+This guide is written for anyone looking to "close shop", to withdraw all funds from an opendex environment.
 
 # Close Shop
 
 Enter your environment via:
 ```bash
-bash ~/xud.sh
+bash ~/opendex.sh
 1) Simnet
 2) Testnet
 3) Mainnet

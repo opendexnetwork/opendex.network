@@ -1,4 +1,4 @@
-This guide is written for anyone looking to run a opendex liquidity provider setup entirely via the command line and create a revenue stream via automated arbitrage.
+This guide is written for system administrators of projects looking to **source liquidity** on the OpenDEX network and is still an early-stage WIP.
 
 # Prerequisites
 
@@ -10,25 +10,12 @@ This guide is written for anyone looking to run a opendex liquidity provider set
 ## Three Networks
 
 1. **Simnet**. `Status: down` until further notice
-
 2. **Testnet**. `Status: up | Required CPUs: 2 for light, 4 for full | RAM: 2GB for light, 16GB for full | Disk: 1GB for light, 200GB for full | Initial Sync Time: 15 mins for light, 24h for full`
 
     bitcoin testnet 3, litecoin testnet 4, ethereum rinkeby. Faucets: [t-BTC](https://coinfaucet.eu/en/btc-testnet/), [t-LTC](https://testnet.help/en/ltcfaucet/testnet), [t-ETH 1](https://faucet.rinkeby.io/) or [2](https://testnet.help/en/ethfaucet/rinkeby). If you need help or some testnet coins, hit us up on [Discord](https://discord.gg/RnXFHpn)!
-
 3. **Mainnet**. `Status: down | Required CPUs: 2 for light, 4 for full | RAM: 2GB for light, 16GB for full | Disk: 1GB for light, 1TB for full | Initial Sync Time: 30 mins for light, 72h for full`
     
    Down until all breaking changes are merged and some weeks on testnet didn't reveal major issues.
-
-
-## Hardware
-Since liquidity providers should be online 24/7 and we are ushering in a post-cloud era, we recommend setting up a power-efficient linux box connected to your router. No special configurations, like port forwardings, are necessary. Running your opendexd setup in the cloud is obviously possible, just not something we encourage to do.
-* **Standard**: [This guide](Standard%20Hardware%20Guide.md) walks you through setting up an arm64-based Raspberry Pi3/4. Costs: **65€-290€**
-* **Pro**: [This guide](Pro%20Hardware%20Guide.md) walks you through setting up a powerful amd64-based Mini PC. Costs: **180€-465€**
-* **Custom**: If you are using a different device or a cloud VPS:
-  * Check the hardware requirements for the different networks and modes above
-  * The full setup requires a SSD for geth being able to sync. For the light setup, a regular HDD/SD card is fine.
-  * If you are using a VPS for testnet or mainnet, you can switch to 2 cores & 4 GB RAM after initial sync, given you use default settings.
-  * We currently support `amd64` (also called `x86`/`x64`) and `arm64` (also called `aarch64`/`armv8`), which should cover most devices and services.
 
 ## Software
 
@@ -287,99 +274,15 @@ Balance:
 └──────────┴───────────────┴────────────────────────────┴───────────────────────────────┘
 ```
 
-## Connect Arby
+## Connect Swap Provider Bot
 
-In this final step we are connecting your opendex setup to your CEX (Centralized EXchage) account via a liquidity provider bot called ["arby"](https://github.com/opendexnetwork/market-maker-bot). Arby enables "transfer" of orders from the CEX into OpenDEX and creates an arbitrage revenue stream for you as liquidity provider. Arby issues orders on the OpenDEX network based on the CEX price, adding a `margin` as premium. When orders are filled on OpenDEX, arby takes care of executing a counter trade on the CEX to lock in profits. At the time of writing, arby supports connecting to [Binance](https://www.binance.com) and [Kraken](https://www.kraken.com/), but more exchanges will be added over time; check arby's [FAQ](https://github.com/opendexnetwork/market-maker-bot#faq) for an up-to-date list. We'll use Binance as example in the following. You will need funds for at least one supported asset on Binance (e.g. BTC) for arby to start issuing orders. To activate arby, `exit` from `opendexd ctl` and run `cp ~/.opendexd-docker/mainnet/sample-mainnet.conf ~/.opendexd-docker/mainnet/mainnet.conf` to create a config file for your environment. Then edit the following options in `mainnet.conf`:
-```bash
-opendexd@ubuntu:~$ nano ~/.opendex-docker/mainnet/mainnet.conf
-# this option needs to be set to false to allow arby to execute Binance orders on your behalf, crucially needed for arby to function
-test-mode="false"
-# the trading pair to activate arby for; currently arby can only handle one pair at a time
-base-asset = "BTC"
-quote-asset = "USDT"
-#cex-base-asset = "" # optional - only needs to be specified if centralized exchange base asset is different from base-asset, e.g. USD instead of USDT
-#cex-quote-asset = "" # optional - only needs to be specified if centralized exchange quote asset is different from quote-asset, e.g. USD instead of USDT
-# log into your Binance account to obtain your api key and secret
-cex = "binance"
-cex-api-key = "your api key"
-cex-api-secret = "your api secret"
-# this is the percentage you'd like to add on top of your orders, 3% in this example
-margin = "0.03"
-# enable arby
-disabled = false
-# CTRL+S, CTRL+X.
-```
-
-Re-enter opendex-ctl (`bash ~/opendexd.sh`) and accept the prompt to add arby. After a minute you should see arby's automatically issued orders based on your Binance and OpenDEX balance via `listorders`. Completed OpenDEX trades are listed in `tradehistory`. You can follow actions taken by arby with `logs arby`.
-
-Check the official [README](https://github.com/opendexnetwork/market-maker-bot/blob/main/README.md) to learn more about how arby works.
+WIP
 
 
 # Report Issues
 
-Please give us feedback and report bugs by running `report` from within `opendex ctl` or join our dedicated "-help" channel on [Discord](https://discord.gg/RnXFHpn)!
+Please give us feedback and report bugs by running `report` from within `opendex ctl` or our "help" channel on [Discord](https://discord.gg/RnXFHpn)!
 
-# Tips 'n Tricks
-* No need to open/forward ports
-* An overview of all available commands within `opendex ctl` can be printed by typing `help` in `opendex ctl`. It allows to use client's cli (e.g. `lncli`), check client status, logs and many more.
-* The opendex-docker setup uses the fixed home directory `~/.opendex-docker` where blockchain & wallet data is stored in by default. Customize the wallet & chain data directory by creating a global opendex-docker config file with `cp ~/.opendex-docker/sample-opendex-docker.conf ~/.opendex-docker/opendex-docker.conf`, then edit `dir`.
-* All config options can temporary be set via cli parameters; run `bash opendex.sh --help` to get an overview of all available parameters. To e.g. use another directory for your mainnet environment, you can run `bash opendex.sh --mainnet-dir /path/to/temp/mainnet/dir`.
-* To permanently change options on a network level, create a network-specific config file with the latest options, e.g. for mainnet with `cp ~/.opendex-docker/mainnet/sample-mainnet.conf ~/.opendex-docker/mainnet/mainnet.conf`, then edit `mainnet.conf`.
-* If you only have a small SSD available (<300GB) for a full setup, you can place your entire setup on a HDD, except for a small part of geth's data, which needs to be located on a fast SSD:
-```bash
-[geth]
-# SSD (internal)
-dir = "/home/<user>/.opendex-docker/mainnet/geth"
-# HDD (external)
-ancient-chaindata-dir = "/media/HDD/opendex/03-Mainnet/data/geth"
-```
-* Sample config full setup:
-```bash
-# edit these lines to sync full nodes for bitcoin, litecoin & ethereum
-[bitcoind]
-mode = "native"
-[litecoind]
-mode = "native"
-[geth]
-mode = "native"
-```
-* You may use external full-nodes (including infura).  
-```bash
-# connect to an external bitcoin core node in your local network (Use `10.0.2.1` on linux or `host.docker.internal` on mac if the full node is running on the same machine)
-[bitcoind]
-mode = "external"
-rpc-host = "192.168.1.42"
-rpc-port = "8332"
-rpc-user = "opendex"
-rpc-password = "opendex"
-zmqpubrawblock = "192.168.1.42:28332"
-zmqpubrawtx = "192.168.1.42:28333"
-```
-* Sample config of your external bitcoind/litecoind to work with the defaults in the `<network>.conf` file:
-```bash
--rpcuser=opendex
--rpcpassword=opendex
--rpcport=18332
--rpcallowip=0.0.0.0/0
--rpcbind=0.0.0.0
--zmqpubrawblock=tcp://0.0.0.0:38332
--zmqpubrawtx=tcp://0.0.0.0:38333
-```
-* Permanently set the alias `opendex` to launch `opendex ctl` from anywhere:
-Add the line `alias opendex="bash ~/opendex.sh"` to the end of `~/.bashrc` or `~/.bash_aliases` on Linux and `bash_profile` on Mac, then `source` the file.
-* You can `exit` from `opendex ctl` any time and re-enter with `bash ~/opendex.sh`; the environment will stay up.
-* A reboot of your host machine does **not** restart your `opendex-docker` environment by default. You will need to run `bash ~/opendex.sh` and `unlock` your environment with your password.
-* Permanently stop the environment by typing `down` in `opendex ctl`. A restart can be achieved with `down` first and then running `bash ~/opendex.sh` again.
-* `opendex-docker` only uses offical opendexd releases for mainnet. Testnet is running the latest `opendexd` master and is updated frequently.
-* If you are syncing the full setup, and `geth` shows sync status **99.99%** for longer than 72h, you are probably running geth on a drive that is too slow for geth to catch up with the chain. In this case, `down` the environment and run a performance test of the disk as desribed [here](Standard%20Hardware%20Guide.md#pi-full-setup). If results are below the 100 MB/s mark, you can either switch to a faster SSD, use the default light setup connecting to an open geth node or use infura.
-* Docker *might* not play nicely with a VPN you are running on the host machine. If you see `Failed to launch environment`, try disconnecting the VPN.
-* If you decide to remove `opendex-docker` from your machine, run the following commands when the environment is `down`:
-```bash
-# Use with caution: this step removes all `opendex` blockchain and wallet data from your system. If you have channels open without backup or lost your seed mnemonic, you are at risk of loosing funds.
-sudo rm -rf ~/.opendex-docker
-rm -rf ~/opendex.sh
-rm -rf /custom/mainnet/dir
-```
 
 ## References
 * [bitcoind config options](https://github.com/bitcoin/bitcoin/blob/master/share/examples/bitcoin.conf)

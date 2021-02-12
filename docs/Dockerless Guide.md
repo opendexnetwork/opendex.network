@@ -1,18 +1,18 @@
-This page contains instructions to natively install `xud` and its minimal dependencies `lnd` (BTC) & `connext` (ETH & ERC20) on linux. It is mainly geared towards developers and administrators which prefer a native installation over docker. For all other users, we recommend our streamlined setup via [xud-docker](Market%20Maker%20Guide.md).
+This page contains instructions how to natively install `opendexd` and its minimal dependencies `lnd` (BTC) & `connext` (ETH & ERC20) on linux. It is mainly geared towards developers and administrators which prefer a native installation over docker.
 
 # Requirements
 
 Make sure to have the following installed:
-- [Node.js](https://nodejs.org/en/download/), active LTS (we recommend [installing via nvm](https://nodejs.org/en/download/package-manager/#nvm))
+- [Node.js](https://nodejs.org/en/download/), current active LTS (we recommend [installing via nvm](https://nodejs.org/en/download/package-manager/#nvm))
 - [Go](https://golang.org/), v1.14 or higher
-- a user called `xud`
+- a user called `opendexd`
 
-# XUD
+# opendexd
 
 ## Option 1: Installing latest release via npm
-This is the easiest and fastest way to install xud on a `amd64` machine: 
+This is the easiest and fastest way to install `opendexd` on a `amd64` machine: 
 ```bash
-sudo npm install xud -g --unsafe-perm
+sudo npm install opendexd -g --unsafe-perm
 ```
 
 ## Option 2: Cloning from GitHub
@@ -20,28 +20,28 @@ sudo npm install xud -g --unsafe-perm
 Testers and developers are encouraged to clone the repository from GitHub and install from source:
 
 ```bash
-git clone https://github.com/ExchangeUnion/xud
-cd xud
+git clone https://github.com/opendexnetwork/opendexd
+cd opendexd
 npm install
 npm run compile
 npm run compile:seedutil
 ```
-If you are on an architecture that is *not* `amd64`, you'll have to remove `grpc-tools` and potentially others from the `devDependencies` section of [`package.json`](https://github.com/ExchangeUnion/xud/blob/master/package.json).
+If you are on an architecture that is *not* `amd64`, you'll have to remove `grpc-tools` and potentially others from the `devDependencies` section of [`package.json`](https://github.com/opendexnetwork/opendexd/blob/main/package.json).
 
-## Daemonize `xud`
+## Daemonize `opendexd`
 
-If you want to daemonize `xud`, so that it starts on boot without needing its own terminal, you can do this using `systemd`:
+If you want to daemonize `opendexd`, so that it starts on boot without needing its own terminal, you can do this using `systemd`:
 
 ```toml
 [Unit]
-Description=XUD
+Description=opendexd
 
 [Service]
-User=xud
-Group=xud
+User=opendexd
+Group=opendexd
 Type=simple
 Environment=NODE_ENV=production
-ExecStart=/home/xud/xud/bin/xud --mainnet
+ExecStart=/home/opendexd/opendexd/bin/opendexd --mainnet
 KillMode=process
 KillSignal=SIGINT
 ```
@@ -59,10 +59,10 @@ If you want to daemonize `lnd`, so that it starts on boot without needing its ow
 Description=LND
 
 [Service]
-User=xud
-Group=xud
+User=opendexd
+Group=opendexd
 Type=simple
-ExecStart=/home/xud/lnd/bin/lnd --bitcoin.mainnet
+ExecStart=/home/opendexd/lnd/bin/lnd --bitcoin.mainnet
 KillMode=process
 KillSignal=SIGINT
 ```
@@ -80,15 +80,15 @@ If you want to daemonize `connext`, so that it starts on boot without needing it
 Description=Connext
 
 [Service]
-User=xud
-Group=xud
+User=opendexd
+Group=opendexd
 Type=simple
 Environment="NODE_ENV=production"
 Environment="CONNEXT_NODE_URL=https://connext.boltz.exchange"
 Environment="CONNEXT_ETH_PROVIDER_URL=http://eth.kilrau.com:41007"
 Environment="LEGACY_MODE=true"
-WorkingDirectory=/home/xud/connext/
-ExecStart=node /home/xud/connext/build/src/index.js
+WorkingDirectory=/home/opendexd/connext/
+ExecStart=node /home/opendexd/connext/build/src/index.js
 KillMode=process
 KillSignal=SIGINT
 ```
@@ -99,7 +99,7 @@ You can install tor via `sudo apt install tor` on most linux distros nowadays, j
 
 # Putting it all together
 
-Create the following `xud.conf` in `/home/xud/.xud`:
+Create the following `opendexd.conf` in `/home/opendexd/.opendexd`:
 ```toml
 mainnet = true
 
@@ -117,16 +117,16 @@ webhookport = 8887
 [lnd.BTC]
 disable = false
 host = "localhost"
-certpath = "/home/xud/.lnd/tls.cert"
-macaroonpath = "/home/xud/.lnd/admin.macaroon"
+certpath = "/home/opendexd/.lnd/tls.cert"
+macaroonpath = "/home/opendexd/.lnd/admin.macaroon"
 
 [lnd.LTC]
 disable = true
 ```
 
-For convenience, consider adding `alias xucli='/home/xud/xud/bin/xucli -p 8886'` to the xud user's `.bashrc` and source it. Then restart `xud` once (e.g. with `systemctl restart xud`) and try running `xucli getinfo`, which should return with an overview of xud's, as well as lnd's and connext status.
+For convenience, consider adding `alias opendex-cli='/home/opendexd/opendexd/bin/opendex-cli -p 8886'` to the opendexd user's `.bashrc` and source it. Then restart `opendexd` once (e.g. with `systemctl restart opendexd`) and try running `opendex-cli getinfo`, which should return with an overview of opendexd's, as well as lnd's and connext status.
 
-Ping us in the help channel of our [Discord server](https://discord.gg/YgDhMSn) for support.
+Ping us in the help channel of our [Discord server](https://discord.gg/RnXFHpn) for support.
 
 # Tips 'n Tricks
 

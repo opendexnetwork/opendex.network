@@ -1,10 +1,10 @@
-This guide is written for professional market makers & traders to build an always-on xud node with a powerful Mini PC.
+This guide is written for professional liquidity providers build an always-on OpenDEX node with a powerful Mini PC.
 
-![BeastXUD setup (plants are optional)](images/BeastXUD.jpg)
+![](images/pro.jpg)
 
 Two options are available:
 
-1. **Light setup** using [Neutrino](https://github.com/lightninglabs/neutrino) and a random open eth provider or optionally [Infura](https://infura.io/). This keeps the setup light-weight & cheap, but requires to trust these full nodes delivering correct chain data to a certain extent.
+1. **Light setup** using [Neutrino](https://github.com/lightninglabs/neutrino) and a random open eth provider or optionally [Infura](https://infura.io/). This keeps the setup light-weight & cheap, but creates a certain dependency on other people's full nodes.
 2. **Full setup** using [bitcoind](https://github.com/bitcoin/bitcoin/), [litecoind](https://github.com/litecoin-project/litecoin) and [geth](https://github.com/ethereum/go-ethereum). Requires more resources and an SSD, but keeps the setup trustless.
 
 ## Light Reference Shopping List (Europe): ~180 €
@@ -29,23 +29,23 @@ Two options are available:
 
 ## Setup
 
-1. [Download Ubuntu Server 20.04 LTS](https://ubuntu.com/download/server) onto your computer. Any other linux distribution supporting docker is also fine. This guide was written assuming `Ubuntu Server 20.04 LTS`.
+1. [Download Ubuntu Server 20.04 LTS](https://ubuntu.com/download/server) onto your computer. Any other linux distribution supporting docker is also fine. This guide was written using `Ubuntu Server 20.04`.
 2. Insert a USB Stick into your computer and [create the a bootable USB Stick](https://ubuntu.com/tutorials/tutorial-create-a-usb-stick-on-ubuntu) with the ubuntu image you just downloaded.
 3. Open your Mini PC, plug in RAM & drives, close it, connect it to your router via ethernet cable and to a power supply. Connect a screen via HDMI, a USB keyboard, the created bootable USB Stick, fire the Mini PC up and follow the the inital setup instructions.
 4. Update ubuntu via `sudo apt update && sudo apt upgrade`
-5. If you are using Ubuntu 20.04 LTS, install docker by running `sudo apt install docker.io`. Otherwise if you are using any version besides Ubuntu 20.04, follow the [official instructions](https://docs.docker.com/install/linux/docker-ce/ubuntu/) to install docker.
-6. Add new user `xud`:
+5. If you are using Ubuntu 20.04, install docker & docker-compose by running `sudo apt install docker.io`. Otherwise if you are using any version besides Ubuntu 20.04, follow the [official instructions](https://docs.docker.com/install/linux/docker-ce/ubuntu/) to install docker.
+6. Add new user `opendex`:
 ```bash
-ubuntu@ubuntu:~$ sudo adduser xud
-Adding user `xud' ...
-Adding new group `xud' (1001) ...
-Adding new user `xud' (1001) with group `xud' ...
-Creating home directory `/home/xud' ...
+ubuntu@ubuntu:~$ sudo adduser opendex
+Adding user `opendex' ...
+Adding new group `opendex' (1001) ...
+Adding new user `opendex' (1001) with group `opendex' ...
+Creating home directory `/home/opendex' ...
 Copying files from `/etc/skel' ...
 New password: 
 Retype new password: 
 passwd: password updated successfully
-Changing the user information for xud
+Changing the user information for opendexd
 Enter the new value, or press ENTER for the default
 	Full Name []: 
 	Room Number []: 
@@ -54,42 +54,42 @@ Enter the new value, or press ENTER for the default
 	Other []: 
 Is the information correct? [Y/n] ubuntu@ubuntu:~$ Y
 ```
-7. Add the `xud` user to the sudo group (advanced users can skip this and use another user to run sudo commands), the docker group and test if docker is working:
+7. Add the `opendex` user to the sudo group (advanced users can skip this and use another user to run sudo commands), the docker group and test if docker is working:
 ```bash
-ubuntu@ubuntu:~$ sudo usermod -aG sudo xud
-ubuntu@ubuntu:~$ sudo usermod -aG docker xud
-# switch to user xud
-ubuntu@ubuntu:~$ sudo su - xud
-xud@ubuntu:~$ docker run hello-world
+ubuntu@ubuntu:~$ sudo usermod -aG sudo opendex
+ubuntu@ubuntu:~$ sudo usermod -aG docker opendex
+# switch to user opendex
+ubuntu@ubuntu:~$ sudo su - opendex
+opendex@ubuntu:~$ docker run hello-world
 Hello from Docker!
 This message shows that your installation appears to be working correctly.
 ```
-8. Looking good! Optionally, add an alias to enter your xud environment by simply typing "xud":
+8. Looking good! Optionally, add an alias to enter your opendexd environment by simply typing "opendex":
 ```bash
-xud@ubuntu:~$ sudo nano ~/.bash_aliases
+opendex@ubuntu:~$ sudo nano ~/.bash_aliases
 # add the line
-alias xud='bash ~/xud.sh'
+alias opendex='bash ~/opendex.sh'
 # CTRL+S, CTRL+X. Then run
-xud@ubuntu:~$ source ~/.bashrc
+opendex@ubuntu:~$ source ~/.bashrc
 ```
 9. Connect the USB stick to your machine and set it up. It is very important to do this for a mainnet setup (given you do not want to loose money)!
 ```bash
 # check the USB stick's path with
-xud@ubuntu:~$ ls -la /dev/ | grep sd
+opendex@ubuntu:~$ ls -la /dev/ | grep sd
 crw-------  1 root root      2,  61 Dec  3 16:27 ptysd
 brw-rw----  1 root disk      8,   0 Dec  3 16:27 sda
 brw-rw----  1 root disk      8,   1 Dec  3 16:27 sda1 #this is your USB Stick
 crw-------  1 root root      3,  61 Dec  3 16:27 ttysd
 # set it to automount via fstab
-xud@ubuntu:~$ sudo nano /etc/fstab
+opendex@ubuntu:~$ sudo nano /etc/fstab
 # add the line
 /dev/sda1 /media/USB ext4 defaults 0 2
 # CTRL+S, CTRL+X. Then mount it
-xud@ubuntu:~$ sudo mkdir /media/USB
-xud@ubuntu:~$ sudo mount -a
+opendex@ubuntu:~$ sudo mkdir /media/USB
+opendex@ubuntu:~$ sudo mount -a
 # check if mounting worked
-xud@ubuntu:~$ df -h
-# make sure xud can use it
-xud@ubuntu:~$ sudo chown xud:xud /media/USB
+opendex@ubuntu:~$ df -h
+# make sure opendexd can use it
+opendex@ubuntu:~$ sudo chown opendex:opendex /media/USB
 ```
-**DONE!** Continue [here](Market%20Maker%20Guide.md#the-setup).
+**DONE!** Continue [here](Liquidity%20Provider%20Guide.md#the-setup).

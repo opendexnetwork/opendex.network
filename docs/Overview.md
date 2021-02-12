@@ -1,8 +1,8 @@
-The OpenDEX Daemon ([`opendexd`](https://github.com/opendexnetwork/opendexd)) is "the node" and core of the OpenDEX network. The graphic below shows the different participants in OpenDEX, how they are connected and flow of liquidity:
+The OpenDEX Daemon ([`opendexd`](https://github.com/opendexnetwork/opendexd)) is "the node" and core of the OpenDEX network. The graphic below shows the different participants in OpenDEX and how they are connected.
 
 ![](./images/participants.png)
 
-## Get Started Running a Node
+## How to Run a Node
 
 👉 as [**Liquidity Provider**](Liquidity%20Provider%20Guide.md), earning via automated arbitrage between external exchanges and OpenDEX
 
@@ -12,9 +12,12 @@ The OpenDEX Daemon ([`opendexd`](https://github.com/opendexnetwork/opendexd)) is
 
 👉 as [**Developer**](Developer%20Guide.md), contributing or building on top of `opendexd`
 
-## API Docs
-
-The OpenDEX Daemon has been designed to be as developer friendly as possible in order to facilitate application development on top of `opendexd`. Find the automatically generated gRPC API documentation at [api.opendex.network](https://api.opendex.network).
+## Special Docs
+* [Contribution Guide](Contribute.md)
+* [Dockerless Guide](Dockerless%20Guide)
+* [Close Shop Guide](Close%20Shop%20Guide.md)
+* [CLI Documentation](CLI.md)
+* [Config Documentation](Config.md)
 
 ## Support & Community
 
