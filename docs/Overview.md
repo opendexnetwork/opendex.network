@@ -1,6 +1,6 @@
-The OpenDEX Daemon ([`opendexd`](https://github.com/opendexnetwork/opendexd)) is "the node" and core of the OpenDEX network. The graphic below shows the different participants in OpenDEX and how they are connected:
+The OpenDEX Daemon ([`opendexd`](https://github.com/opendexnetwork/opendexd)) is "the node" and core of the OpenDEX network. The graphic below shows the different participants in OpenDEX, how they are connected and flow of liquidity:
 
-![participants](./images/participants.png)
+![](./images/participants.png)
 
 ## Get Started Running a Node
 
