@@ -110,7 +110,7 @@ torport = 9050
 [connext]
 disable = false
 host = "localhost"
-port = 5000
+port = 8000
 webhookhost = "localhost"
 webhookport = 8887
 

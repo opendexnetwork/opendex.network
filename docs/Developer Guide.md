@@ -78,7 +78,7 @@ macaroonpath = "/home/<youruser>/lndltc/data/chain/litecoin/testnet/admin.macaro
 [connext]
 disable = false
 host = "localhost"
-port = 15000
+port = 18000
 ```
 8. Now you can start your local `opendexd` instance and it should connect to the running testnet docker environment. You can check that everything works with `~/opendexd/bin$ ./opendex-cli -p 18886 getinfo`.
 
