@@ -22,9 +22,12 @@ This guide is written for anyone looking to run a opendex liquidity provider set
 
 ## Hardware
 Since liquidity providers should be online 24/7 and we are ushering in a post-cloud era, we recommend setting up a power-efficient linux box connected to your router. No special configurations, like port forwardings, are necessary. Running your opendexd setup in the cloud is obviously possible, just not something we encourage to do.
-* **Standard**: [This guide](Standard%20Hardware%20Guide.md) walks you through setting up an arm64-based Raspberry Pi3/4. Costs: **65€-290€**
-* **Pro**: [This guide](Pro%20Hardware%20Guide.md) walks you through setting up a powerful amd64-based Mini PC. Costs: **180€-465€**
-* **Custom**: If you are using a different device or a cloud VPS:
+
+[**🧑‍🏭 Standard Hardware Guide**](Standard%20Hardware%20Guide.md): This guide walks you through setting up an arm64-based Raspberry Pi3/4. Costs: **65€-290€**
+
+[**💪 Pro Hardware Guide**](Pro%20Hardware%20Guide.md): This guide walks you through setting up a powerful amd64-based Mini PC. Costs: **180€-465€**
+
+🎚️ **Custom**: If you are using a different device or a cloud VPS:
   * Check the hardware requirements for the different networks and modes above
   * The full setup requires a SSD for geth being able to sync. For the light setup, a regular HDD/SD card is fine.
   * If you are using a VPS for testnet or mainnet, you can switch to 2 cores & 4 GB RAM after initial sync, given you use default settings.
