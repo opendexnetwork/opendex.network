@@ -130,5 +130,5 @@ Ping us in the help channel of our [Discord server](https://discord.gg/RnXFHpn) 
 
 # Tips 'n Tricks
 
-* When installing on a Raspberry Pi you might see `Unexpected error during initialization`. [Here](https://github.com/ExchangeUnion/xud/issues/1199#issuecomment-527819108) the solution.
+* When installing on a Raspberry Pi you might see `Unexpected error during initialization`. [Here](https://github.com/ExchangeUnion/xud/issues/1199#issuecomment-527819108) is the solution.
 * If you see an `install error` when installing via `npm install`, try `npm install --production` & `npm install typescript`.

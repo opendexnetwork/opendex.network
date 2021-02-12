@@ -26,4 +26,4 @@ Make your code legible by using descriptive variable, function, and class names.
 
 Commit messages should be concise and descriptive. For larger or more complex commits, add details of what has changed in the commit description.
 
-If you see something missing or want to develop another cool feature or bug fix which doesn't have an issue yet, open one and we'll review and give it a price tag if you ask nicely ;) ! We don't recommend working on things without a GitHub issue.
+If you see something missing or want to develop another cool feature or bug fix which doesn't have an issue yet, open one and we'll take it from there. We don't recommend working on things without a GitHub issue.

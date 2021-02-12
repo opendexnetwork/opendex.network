@@ -1,4 +1,4 @@
-This guide is written for professional liquidity providers build an always-on OpenDEX node with a powerful Mini PC.
+This guide is written for professional liquidity providers to turn a powerful Mini PC into an always-on OpenDEX node.
 
 ![](images/pro.jpg)
 
@@ -72,7 +72,7 @@ alias opendex='bash ~/opendex.sh'
 # CTRL+S, CTRL+X. Then run
 opendex@ubuntu:~$ source ~/.bashrc
 ```
-9. Connect the USB stick to your machine and set it up. It is very important to do this for a mainnet setup (given you do not want to loose money)!
+9. Connect the USB stick to your machine and set it up. It is very important to do this for a mainnet setup (given you do not want to lose money)!
 ```bash
 # check the USB stick's path with
 opendex@ubuntu:~$ ls -la /dev/ | grep sd

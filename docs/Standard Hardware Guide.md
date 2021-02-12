@@ -103,7 +103,7 @@ alias opendex='bash ~/opendex.sh'
 # CTRL+S, CTRL+X. Then run
 opendex@ubuntu:~$ source ~/.bashrc
 ```
-11. Connect the USB stick to your Pi and set it up. It is very important to do this for a mainnet setup (given you do not want to loose money)!
+11. Connect the USB stick to your Pi and set it up. It is very important to do this for a mainnet setup (given you do not want to lose money)!
 ```bash
 # check the USB stick's path with
 opendex@ubuntu:~$ ls -la /dev/ | grep sd
