@@ -8,7 +8,7 @@
 
 [🔁 **Swap privately & securely** via the easy-to-use webapp 🖥️](https://boltz.exchange/)
 
-[💸 **Provide liquidity & earn** by running a node 👨‍💻](docs/Overview.md)
+[💸 **Provide liquidity & earn** by running a node 👨‍💻](docs/Liquidity%20Provider%20Guide.md)
 
 ## OpenDEX Features
 

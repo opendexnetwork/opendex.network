@@ -1,12 +1,12 @@
-The OpenDEX Daemon ([`opendexd`](https://github.com/opendexnetwork/opendexd)) is "the node" and core of the OpenDEX network. The graphic below shows the four distinct sets of participants in OpenDEX and how they are connected: liquidity providers, swap providers, day-traders and end-users of swap providers:
+The OpenDEX Daemon ([`opendexd`](https://github.com/opendexnetwork/opendexd)) is "the node" and core of the OpenDEX network. The graphic below shows the different participants in OpenDEX and how they are connected:
 
-![participants](docs/images/participants.png)
+![participants](./images/participants.png)
 
 ## Get Started Running a Node
 
 👉 as [**Liquidity Provider**](Liquidity%20Provider%20Guide.md), earning via automated arbitrage between external exchanges and OpenDEX
 
-👉 as [**Swap Provider**](Swap%20Provider%20Guide.md), sourcing liquidity on OpenDEX
+👉 as [**Swap Provider**](Swap%20Provider%20Guide.md), sourcing liquidity on OpenDEX **(WIP)**
 
 👉 as [**Day Trader**](Day%20Trader%20Guide.md), trading instantaneously while preserving full control & privacy
 
