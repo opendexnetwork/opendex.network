@@ -6,7 +6,7 @@ The current protocol requires a direct connection between two nodes for performi
 
 Each node maintains a persistent **secp256k1** private key with a corresponding public key, node key for short, which uniquely identifies the node in the network. We recommend only allowing manual resets of the private key, for example by deleting a file or database entry.
 
-An initial handshake is required to establish a secure TCP-based session between two nodes. The default listening TCP port is **8885** \(XU in ASCII\).
+An initial handshake is required to establish a secure TCP-based session between two nodes. The default listening TCP port is **8885**.
 
 ## Handshake Protocol
 

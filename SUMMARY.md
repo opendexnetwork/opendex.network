@@ -1,23 +1,25 @@
 # Table of contents
 
-* [Hello!](README.md)
-
-## Read
-
-* [BOLD \#0: Introduction](read/00-introduction.md)
-* [BOLD \#1: Message Format](read/01-message-format.md)
-* [BOLD \#2: Peer Protocol](read/02-peer-protocol.md)
-* [BOLD \#3: Trade Protocol](read/03-trade-protocol.md)
-* [BOLD \#4: Swap Protocol](read/04-swap-protocol.md)
-* [The Bitcoin Whitepaper](https://github.com/opendexnetwork/opendex/raw/master/.gitbook/assets/bitcoin.pdf)
+* [👋-Hello!](README.md)
 
 ## Community
 
-* [Videos](community/videos.md)
-* [Contribution Guide](community/contribute.md)
+* [🎥-Weekly Call & Videos](community/videos.md)
 
-## Trade
+## Docs
 
-* [Exchanges](trade/exchanges.md)
-* [Implementations](trade/implementations.md)
+* [📝-Overview](docs/Overview.md)
+* [💸-Liquidity Provider](docs/Liquidity%20Provider%20Guide.md)
+* [👨‍💻-Developer](docs/Developer%20Guide.md)
+* [🤖-API Docs](https://api.opendex.network)
 
+
+## BOLD
+* [📜-Intro](bold/00-introduction.md)
+* [1️⃣-Message Format](bold/01-message-format.md)
+* [2️⃣-Peer Protocol](bold/02-peer-protocol.md)
+* [3️⃣-Trade Protocol](bold/03-trade-protocol.md)
+* [4️⃣-Swap Protocol](bold/04-swap-protocol.md)
+
+## MOAR
+* [👑-Bitcoin Whitepaper](https://raw.githubusercontent.com/opendexnetwork/opendex/master/.gitbook/assets/bitcoin.pdf)

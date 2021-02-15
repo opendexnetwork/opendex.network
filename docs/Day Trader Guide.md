@@ -1,0 +1,1 @@
+The (OpenDEX Desktop App)[https://github.com/opendexnetwork/opendex-desktop/releases] is the best way to do high-frequency trading on the OpenDEX Network with a nice user interface. If preferred, trading entirely via the command line is possible though following [this guide](Liquidity%20Provider%20Guide.md).
