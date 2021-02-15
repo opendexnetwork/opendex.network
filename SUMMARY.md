@@ -9,11 +9,12 @@
 ## Docs
 
 * [📝-Overview](docs/Overview.md)
-* [💸-Liquidity Provider](docs/Liquidity%20Provider%20Guide.md)
-* [👨‍💻-Developer](docs/Developer%20Guide.md)
+    * [💸-Liquidity Provider](docs/Liquidity%20Provider%20Guide.md)
+    * [Swap Provider](docs/Swap%20Provider%20Guide.md)
+    * [Day Trader Guide](docs/Day%20Trader%20Guide.md)
+    * [👨‍💻-Developer](docs/Developer%20Guide.md)
 * [🤖-API Docs](https://api.opendex.network)
-#*[Swap Provider](docs/Swap%20Provider%20Guide.md)
-#*[Day Trader Guide](docs/Day%20Trader%20Guide.md)
+
 
 
 ## BOLD
