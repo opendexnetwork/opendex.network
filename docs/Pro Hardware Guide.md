@@ -1,6 +1,6 @@
 This guide is written for professional liquidity providers to turn a powerful Mini PC into an always-on OpenDEX node.
 
-![](images/pro.jpg)
+![](./images/pro.jpg)
 
 Two options are available:
 
@@ -92,4 +92,4 @@ opendex@ubuntu:~$ df -h
 # make sure opendexd can use it
 opendex@ubuntu:~$ sudo chown opendex:opendex /media/USB
 ```
-**DONE!** Continue [here](Liquidity%20Provider%20Guide.md#the-setup).
+**DONE!** Continue [here](/docs/Liquidity%20Provider%20Guide.md#the-setup).

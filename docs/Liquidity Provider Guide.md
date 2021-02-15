@@ -23,9 +23,9 @@ This guide is written for anyone looking to run a opendex liquidity provider set
 ## Hardware
 Since liquidity providers should be online 24/7 and we are ushering in a post-cloud era, we recommend setting up a power-efficient linux box connected to your router. No special configurations, like port forwardings, are necessary. Running your opendexd setup in the cloud is obviously possible, just not something we encourage to do.
 
-[**🧑‍🏭 Standard Hardware Guide**](Standard%20Hardware%20Guide.md): This guide walks you through setting up an arm64-based Raspberry Pi3/4. Costs: **65€-290€**
+[**🧑‍🏭 Standard Hardware Guide**](/docs/Standard%20Hardware%20Guide.md): This guide walks you through setting up an arm64-based Raspberry Pi3/4. Costs: **65€-290€**
 
-[**💪 Pro Hardware Guide**](Pro%20Hardware%20Guide.md): This guide walks you through setting up a powerful amd64-based Mini PC. Costs: **180€-465€**
+[**💪 Pro Hardware Guide**](/docs/Pro%20Hardware%20Guide.md): This guide walks you through setting up a powerful amd64-based Mini PC. Costs: **180€-465€**
 
 🎚️ **Custom**: If you are using a different device or a cloud VPS:
   * Check the hardware requirements for the different networks and modes above
@@ -374,7 +374,7 @@ Add the line `alias opendex="bash ~/opendex.sh"` to the end of `~/.bashrc` or `~
 * A reboot of your host machine does **not** restart your `opendex-docker` environment by default. You will need to run `bash ~/opendex.sh` and `unlock` your environment with your password.
 * Permanently stop the environment by typing `down` in `opendex ctl`. A restart can be achieved with `down` first and then running `bash ~/opendex.sh` again.
 * `opendex-docker` only uses offical opendexd releases for mainnet. Testnet is running the latest `opendexd` master and is updated frequently.
-* If you are syncing the full setup, and `geth` shows sync status **99.99%** for longer than 72h, you are probably running geth on a drive that is too slow for geth to catch up with the chain. In this case, `down` the environment and run a performance test of the disk as desribed [here](Standard%20Hardware%20Guide.md#pi-full-setup). If results are below the 100 MB/s mark, you can either switch to a faster SSD, use the default light setup connecting to an open geth node or use infura.
+* If you are syncing the full setup, and `geth` shows sync status **99.99%** for longer than 72h, you are probably running geth on a drive that is too slow for geth to catch up with the chain. In this case, `down` the environment and run a performance test of the disk as desribed [here](/docs/Standard%20Hardware%20Guide.md#pi-full-setup). If results are below the 100 MB/s mark, you can either switch to a faster SSD, use the default light setup connecting to an open geth node or use infura.
 * Docker *might* not play nicely with a VPN you are running on the host machine. If you see `Failed to launch environment`, try disconnecting the VPN.
 * If you decide to remove `opendex-docker` from your machine, run the following commands when the environment is `down`:
 ```bash
@@ -389,5 +389,5 @@ rm -rf /custom/mainnet/dir
 * [litecoind config options](https://litecoin.info/index.php/Litecoin.conf#litecoin.conf_Configuration_File)
 * [geth config options](https://github.com/ethereum/go-ethereum/blob/master/README.md#configuration)
 * [lnd config options](https://github.com/lightningnetwork/lnd/blob/master/sample-lnd.conf)
-* [connext config options](https://docs.connext.network/en/latest/quickstart/clientInstantiation.html#client-options)
+* [connext config options](https://docs.connext.network)
 * [opendexd config options](https://github.com/opendexnetwork/opendexd/blob/main/sample-opendex.conf)

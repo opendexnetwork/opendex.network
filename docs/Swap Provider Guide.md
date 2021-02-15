@@ -1,4 +1,4 @@
-This guide is written for system administrators of projects looking to **source liquidity** on the OpenDEX network and is still an early-stage WIP.
+This guide is written for system administrators of projects looking to **source liquidity** on the OpenDEX network and is still an **early-stage WIP**.
 
 # Prerequisites
 
