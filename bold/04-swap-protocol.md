@@ -1,4 +1,4 @@
-# BOLD \#4: Swap Protocol
+# 4️⃣-Swap Protocol
 
 ## Overview
 

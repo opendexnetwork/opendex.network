@@ -1,4 +1,4 @@
-# BOLD \#3: Trade Protocol
+# 3️⃣-Trade Protocol
 
 ## Overview
 

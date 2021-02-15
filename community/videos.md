@@ -1,4 +1,4 @@
-# Videos
+# 🎥-Weekly Call & Videos
 
 This section contains video recordings of OpenDEX community calls, explainers, guides & more!
 
@@ -14,7 +14,7 @@ In this community call we covered another exciting week of happenings: [Tesla's 
 
 ### Community Call \#13 \(2021-02-03\) 👉 [Video](https://youtu.be/Xha5l6t19Nk) 👈
 
-In this community call we announced our move from "Exchange Union" to ["OpenDEX"](https://opendex.network), which unifies everything under one name and should avoid confusion down the road. This also comes with a change in product focus, how we are funded, team members and more. The gist is: we are shifting focus towards UX & end-user facing trading products while keeping our core atomic-swap-DNA (the user is always in control of funds) & OpenDEX will become even more open going forward. If you are interested in day-to-day updates and what we are working on, please join our [Discord server](https://discord.gg/RnXFHpn) and *watch* our [GitHub repositories](https://github.com/opendexnetwork). We also touched on [Microstrategy sharing the "Bitcoin for Corporations"](https://www.microstrategy.com/en/resources/events/world-2021/bitcoin-summit) playbook, [Elon on Clubhouse](https://twitter.com/MMCrypto/status/1356131319424704513?s=09) & Bisq's new ["Cash by Mail"](https://bisq.wiki/Cash_by_mail) feature. 
+In this community call we announced our move from "Exchange Union" to ["OpenDEX"](https://opendex.network), which unifies everything under one name and should avoid confusion down the road. This also comes with a change in product focus, how we are funded, team members and more. The gist is: we are shifting focus towards UX & end-user facing trading products while keeping our core atomic-swap-DNA \(the user is always in control of funds\) & OpenDEX will become even more open going forward. If you are interested in day-to-day updates and what we are working on, please join our [Discord server](https://discord.gg/RnXFHpn) and _watch_ our [GitHub repositories](https://github.com/opendexnetwork). We also touched on [Microstrategy sharing the "Bitcoin for Corporations"](https://www.microstrategy.com/en/resources/events/world-2021/bitcoin-summit) playbook, [Elon on Clubhouse](https://twitter.com/MMCrypto/status/1356131319424704513?s=09) & Bisq's new ["Cash by Mail"](https://bisq.wiki/Cash_by_mail) feature.
 
 ### Community Call \#12 \(2021-01-27\) 👉 [Video](https://youtu.be/tL5FRf-QvH8) 👈
 
@@ -62,10 +62,11 @@ In our second community call we saw a demo of the first iteration of XUD Explore
 
 ### Community Call \#1 \(2020-10-21\) 👉 [Video](https://youtu.be/mGumdYAjDkY) & [Slides](https://raw.githubusercontent.com/opendexnetwork/opendex/master/slides/20201021_OpenDEX_Community_Call.pdf) 👈
 
-In our first community call we covered the **Why?, How?, What?** along with some live mainnet trading and a Q&A session. 
+In our first community call we covered the **Why?, How?, What?** along with some live mainnet trading and a Q&A session.
 
 ## Misc
 
 ### First public announcement \(2019-10-05\) 👉 [Video](https://www.youtube.com/watch?v=euSr9A6tI90) & [slides](https://raw.githubusercontent.com/opendexnetwork/opendex/master/slides/20191005_hcpp19.pdf) 👈
 
 The first public announcement of OpenDEX at [\#hcpp19](https://opt-out.hcpp.cz/) in Prague.
+
