@@ -13,7 +13,6 @@ The OpenDEX Daemon ([`opendexd`](https://github.com/opendexnetwork/opendexd)) is
 👉 as [**Developer**](Developer%20Guide.md), contributing or building on top of `opendexd`
 
 ## Special Docs
-* [Contribution Guide](/docs/Contribute.md)
 * [Dockerless Guide](/docs/Dockerless%20Guide)
 * [Close Shop Guide](/docs/Close%20Shop%20Guide.md)
 * [CLI Documentation](/docs/CLI.md)
