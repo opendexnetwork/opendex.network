@@ -4,13 +4,13 @@ The OpenDEX Daemon ([`opendexd`](https://github.com/opendexnetwork/opendexd)) is
 
 ## How to Run a Node
 
-👉 as [**Liquidity Provider**](/docs/Liquidity%20Provider%20Guide.md), earning via automated arbitrage between external exchanges and OpenDEX
+👉 as [**Liquidity Provider**](./Liquidity%20Provider%20Guide.md), earning via automated arbitrage between external exchanges and OpenDEX
 
-👉 as [**Swap Provider**](/docs/Swap%20Provider%20Guide.md), sourcing liquidity on OpenDEX **(WIP)**
+👉 as [**Swap Provider**](./Swap%20Provider%20Guide.md), sourcing liquidity on OpenDEX **(WIP)**
 
-👉 as [**Day Trader**](/docs/Day%20Trader%20Guide.md), trading instantaneously while preserving full control & privacy
+👉 as [**Day Trader**](./Day%20Trader%20Guide.md), trading instantaneously while preserving full control & privacy
 
-👉 as [**Developer**](/docs/Developer%20Guide.md), contributing or building on top of `opendexd`
+👉 as [**Developer**](./Developer%20Guide.md), contributing or building on top of `opendexd`
 
 ## Special Docs
 * [Contribution Guide](/docs/Contribute.md)
