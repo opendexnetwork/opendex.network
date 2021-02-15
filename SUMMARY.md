@@ -9,17 +9,17 @@
 ## Docs
 
 * [📝-Intro](docs/Overview.md)
-* [💸-Liquidity Provider](docs/Liquidity%20Provider%20Guide.md)
+* [🌊-Liquidity Providers](docs/Liquidity%20Provider%20Guide.md)
     * [**🧑‍🏭 Standard Hardware Guide**](docs/Standard%20Hardware%20Guide.md)
     * [**💪 Pro Hardware Guide**](docs/Pro%20Hardware%20Guide.md)
-* [🔁-Swap Provider](docs/Swap%20Provider%20Guide.md)
-* [📈-Day Trader Guide](docs/Day%20Trader%20Guide.md)
-* [👨‍💻-Developer](docs/Developer%20Guide.md)
-* [🤝-Contribution Guide](/docs/Contribute.md)
-* [✋-Dockerless Guide](docs/Dockerless%20Guide)
-* [🛑-Close Shop Guide](docs/Close%20Shop%20Guide.md)
-* [💻-CLI Documentation](docs/CLI.md)
-* [🎚️-Config Documentation](docs/Config.md)
+* [🔁-Swap Providers](docs/Swap%20Provider%20Guide.md)
+* [📈-Day Traders](docs/Day%20Trader%20Guide.md)
+* [👨‍💻-Developers](docs/Developer%20Guide.md)
+* [🤝-Code Contribution](docs/Contribute.md)
+* [✋-Dockerless Setup](docs/Dockerless%20Guide.md)
+* [🛑-How-to Close Shop](docs/Close%20Shop%20Guide.md)
+* [💻-CLI Docs](docs/CLI.md)
+* [🎚️-Config Docs](docs/Config.md)
 * [🤖-API Docs](https://api.opendex.network)
 
 ## BOLD
