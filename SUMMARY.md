@@ -8,18 +8,18 @@
 
 ## Docs
 
-* [📝-Intro](docs/Overview.md)
-* [🌊-Liquidity Providers](docs/Liquidity%20Provider%20Guide.md)
-    * [**🧑‍🏭 Standard Hardware Guide**](docs/Standard%20Hardware%20Guide.md)
-    * [**💪 Pro Hardware Guide**](docs/Pro%20Hardware%20Guide.md)
-* [🔁-Swap Providers](docs/Swap%20Provider%20Guide.md)
-* [📈-Day Traders](docs/Day%20Trader%20Guide.md)
-* [👨‍💻-Developers](docs/Developer%20Guide.md)
-* [🤝-Code Contribution](docs/Contribute.md)
-* [✋-Dockerless Setup](docs/Dockerless%20Guide.md)
-* [🛑-How-to Close Shop](docs/Close%20Shop%20Guide.md)
-* [💻-CLI Docs](docs/CLI.md)
-* [🎚️-Config Docs](docs/Config.md)
+* [📝-Intro](docs/intro.md)
+* [🌊-Liquidity Providers](docs/liquidity-providers.md)
+    * [**🧑‍🏭 Standard Hardware Guide**](docs/standard-hardware.md)
+    * [**💪 Pro Hardware Guide**](docs/pro-hardware.md)
+* [🔁-Swap Providers](docs/swap-providers.md)
+* [📈-Day Traders](docs/day-traders.md)
+* [👨‍💻-Developers](docs/developers.md)
+* [🤝-Code Contribution](docs/contribute.md)
+* [✋-Dockerless Setup](docs/dockerless.md)
+* [🛑-How-to Close Shop](docs/close-shop.md)
+* [💻-CLI Docs](docs/cli.md)
+* [🎚️-Config Docs](docs/config.md)
 * [🤖-API Docs](https://api.opendex.network)
 
 ## BOLD

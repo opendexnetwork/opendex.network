@@ -92,4 +92,4 @@ opendex@ubuntu:~$ df -h
 # make sure opendexd can use it
 opendex@ubuntu:~$ sudo chown opendex:opendex /media/USB
 ```
-**DONE!** Continue [here](/docs/Liquidity%20Provider%20Guide.md#the-setup).
+**DONE!** Continue [here](/docs/liquidity-providers.md#the-setup).

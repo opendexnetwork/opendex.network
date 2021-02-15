@@ -2,7 +2,7 @@ This guide is intended to help developers who want to contribute to `opendexd`. 
 
 ## Contribution Guidelines
 
-Be sure to read the [Contribution Guidelines](/docs/Contribute.md) before starting to work or opening a Pull Request.
+Be sure to read the [Contribution Guidelines](/docs/contribute.md) before starting to work or opening a Pull Request.
 
 ## Recommended Development Environments
 
@@ -44,7 +44,7 @@ nodemon --watch dist -e js bin/opendexd --lndbtc.disable=true --lndltc.disable=t
 
 We recommend to connect the `opendexd` instance you are developing on to testnet. Combined with above restarting mechanism, this lets you instantly see how your changes behave in a real-world trading environment.
 
-1. Start testnet with default settings as described [here](/docs/Liquidity%20Provider%20Guide.md).
+1. Start testnet with default settings as described [here](/docs/liquidity-providers.md).
 2. Once the environment is up and running, exit from the cli session by typing `exit` or open a second terminal.
 3. Stop the opendexd container with `docker stop testnet_opendexd_1`.
 4. Copy the testnet lndbtc & lndltc folders into some path that you can easily access. E.g. into your home directory:
