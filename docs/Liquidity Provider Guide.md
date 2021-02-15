@@ -43,7 +43,7 @@ Version >= 18.09 on Linux or Windows 10 [using WSL 2](https://docs.microsoft.com
 
 From here we assume that your device is running with docker set up. Check the guides in the hardware section above if your device is not ready yet.
 
-## Let's Roll
+## Let's Roll (!WIP - NOT FULLY WORKING YET!)
 
 Start the environment with
 
