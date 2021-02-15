@@ -2,11 +2,11 @@
 
 ![](.gitbook/assets/OpenDEX.png)
 
-**OpenDEX is a cross-chain DEX ecosystem, featuring a user-friendly webapp for spontaneous asset swaps and a layer 3 high-speed trading network for liquidity providers & day traders built on the [Lightning](https://lightning.network/) and [Connext](https://connext.network/) networks.** OpenDEX consists of software, community, member projects, and the BOLD protocol standard with the goal to unify currently incompatible protocols and fragmented liquidity.
+**OpenDEX is a cross-chain DEX ecosystem, featuring a user-friendly web app for spontaneous asset swaps and a layer 3 high-speed trading network for liquidity providers & day traders built on the [Lightning](https://lightning.network/) and [Connext](https://connext.network/) networks.** OpenDEX consists of software, community, member projects, and the BOLD protocol standard with the goal to unify currently incompatible protocols and fragmented liquidity.
 
 ## Get Started
 
-[🔁 **Swap privately & securely** via the easy-to-use webapp 🖥️](https://boltz.exchange/)
+[🔁 **Swap privately & securely** via the easy-to-use web app 🖥️](https://boltz.exchange/)
 
 [💸 **Provide liquidity & earn** by running a node 👨‍💻](docs/Liquidity%20Provider%20Guide.md)
 
