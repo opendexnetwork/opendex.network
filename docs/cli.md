@@ -1,4 +1,4 @@
-`opendex-cli` is the command line interface that handles much of the basic interaction with a running `opendexd` instance. If `opendexd` is installed globally, it can be launched from any directory. In the recommended [opendex-docker](User%20Guide.md) setup, it can be used from within the `opendexd ctl` shell.
+`opendex-cli` is the command line interface that handles much of the basic interaction with a running `opendexd` instance. If `opendexd` is installed globally, it can be launched from any directory. In the recommended [opendex-docker](/docs/liquidity-providers.md) setup, it can be used from within the `opendexd ctl` shell.
 
 To get a list of up-to-date commands, run:
 ```

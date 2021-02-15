@@ -4,24 +4,23 @@ The OpenDEX Daemon ([`opendexd`](https://github.com/opendexnetwork/opendexd)) is
 
 ## How to Run a Node
 
-👉 as [**Liquidity Provider**](Liquidity%20Provider%20Guide.md), earning via automated arbitrage between external exchanges and OpenDEX
+👉 as [**Liquidity Provider**](/docs/liquidity-providers.md), earning via automated arbitrage between external exchanges and OpenDEX
 
-👉 as [**Swap Provider**](Swap%20Provider%20Guide.md), sourcing liquidity on OpenDEX **(WIP)**
+👉 as [**Swap Provider**](/docs/swap-providers.md), sourcing liquidity on OpenDEX **(WIP)**
 
-👉 as [**Day Trader**](Day%20Trader%20Guide.md), trading instantaneously while preserving full control & privacy
+👉 as [**Day Trader**](/docs/day-traders.md), trading instantaneously while preserving full control & privacy
 
-👉 as [**Developer**](Developer%20Guide.md), contributing or building on top of `opendexd`
+👉 as [**Developer**](/docs/developers.md), contributing or building on top of `opendexd`
 
 ## Special Docs
-* [Contribution Guide](Contribute.md)
-* [Dockerless Guide](Dockerless%20Guide)
-* [Close Shop Guide](Close%20Shop%20Guide.md)
-* [CLI Documentation](CLI.md)
-* [Config Documentation](Config.md)
+* [Dockerless Guide](/docs/dockerless.md)
+* [Close Shop Guide](/docs/close-shop.md)
+* [CLI Documentation](/docs/cli.md)
+* [Config Documentation](/docs/config.md)
 
 ## Support & Community
 
-* [Contribute](Contribute.md)!
+* [Contribute](/docs/contribute.md)!
 * Support and development-related questions are welcome on our [Discord](https://discord.gg/RnXFHpn)!
 
 ## Help us to improve!

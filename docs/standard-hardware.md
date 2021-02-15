@@ -1,6 +1,6 @@
 This guide is written for liquidity providers to turn a Raspberry Pi into an always-on OpenDEX node.
 
-![](images/standard.jpeg)
+![](./images/standard.jpeg)
 
 Two options are available:
 
@@ -127,7 +127,7 @@ From here the light and full setup require different settings. Continue choosing
 
 ## Pi Light Setup
 
-If you are using a Pi model with 2GB of RAM or more, you can continue [here](Liquidity%20Provider%20Guide.md#the-setup). If you are using a Pi model with <2GB of RAM, we will have to catch a temporary RAM spike when creating the opendex environment by creating a swap file (overflow RAM) of 2GB on the internal sd card:
+If you are using a Pi model with 2GB of RAM or more, you can continue [here](/docs/liquidity-providers.md#the-setup). If you are using a Pi model with <2GB of RAM, we will have to catch a temporary RAM spike when creating the opendex environment by creating a swap file (overflow RAM) of 2GB on the internal sd card:
 ```bash
 # create the swap file
 opendex@ubuntu:~$ sudo fallocate -l 2G /home/opendex/swapfile
@@ -149,7 +149,7 @@ opendex@ubuntu:~$ sudo swapon --show
 NAME               TYPE SIZE USED PRIO
 /home/opendex/swapfile file  2G   0B   -2
 ```
-Light setup - **DONE!** Continue [here](Liquidity%20Provider%20Guide.md#the-setup).
+Light setup - **DONE!** Continue [here](/docs/liquidity-providers.md#the-setup).
 
 ## Pi Full Setup
 
@@ -209,4 +209,4 @@ opendex@ubuntu:~$ sudo swapon --show
 NAME               TYPE SIZE USED PRIO
 /media/SSD/swapfile file  8G   0B   -2
 ```
-Full setup - **DONE!** Continue [here](Liquidity%20Provider%20Guide.md#the-setup).
+Full setup - **DONE!** Continue [here](/docs/liquidity-providers.md#the-setup).
