@@ -30,4 +30,6 @@
 * [4️⃣-Swap Protocol](/bold/04-swap-protocol.md)
 
 ## MOAR
+
 * [👑-Bitcoin Whitepaper](https://raw.githubusercontent.com/opendexnetwork/opendex/master/.gitbook/assets/bitcoin.pdf)
+

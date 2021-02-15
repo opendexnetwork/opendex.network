@@ -1,4 +1,4 @@
-# BOLD \#1: Message Format
+# 1️⃣-Message Format
 
 ## Overview
 
