@@ -6,9 +6,9 @@ The OpenDEX Daemon ([`opendexd`](https://github.com/opendexnetwork/opendexd)) is
 
 👉 as [**Liquidity Provider**](./Liquidity%20Provider%20Guide.md), earning via automated arbitrage between external exchanges and OpenDEX
 
-👉 as [**Swap Provider**](./Swap%20Provider%20Guide.md), sourcing liquidity on OpenDEX **(WIP)**
+👉 as [**Swap Provider**](https://github.com/opendexnetwork/opendex.network/blob/master/docs/Swap%20Provider%20Guide.md), sourcing liquidity on OpenDEX **(WIP)**
 
-👉 as [**Day Trader**](./Day%20Trader%20Guide.md), trading instantaneously while preserving full control & privacy
+👉 as [**Day Trader**](https://github.com/opendexnetwork/opendex.network/blob/master/docs/Day%20Trader%20Guide.md), trading instantaneously while preserving full control & privacy
 
 👉 as [**Developer**](./Developer%20Guide.md), contributing or building on top of `opendexd`
 
