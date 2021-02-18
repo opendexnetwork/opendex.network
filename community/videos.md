@@ -8,6 +8,10 @@ This section contains video recordings of OpenDEX community calls, explainers, g
 * Time and day of the call: 18:00 UTC, every Wednesday
 * Discussions are recorded and uploaded here
 
+### Community Call \#15 \(2021-02-17\) 👉 [NO Video, sorry!]() 👈
+
+In this community call we covered another exciting week of happenings: [Microstrategy raising even moar money to buy Bitcoin](https://www.microstrategy.com/en/investor-relations/press/microstrategy-announces-proposed-private-offering-of-600m-of-convertible-senior-notes), [a new proposal how to offer escrow services on lightning and hold fees](https://bitcoinops.org/en/newsletters/2021/02/17/) based on a post-taproot feature called [PTLCs](https://bitcoinops.org/en/topics/ptlc/) (a more private & efficient replacment for HTLCs), our [👉 website re-write 👈 (check it out!)](https://opendex.network/), [all-new OpenDEX Destkop Release for Windows 🎉](https://github.com/opendexnetwork/opendex-desktop/releases/tag/v1.0.0-testnet.1), also some of you asked me to link this pretty stats page [coin.dance](https://coin.dance/). Apologies for the missing recording, our bad ✌️
+
 ### Community Call \#14 \(2021-02-10\) 👉 [Video](https://youtu.be/A9bQPYvWb1o) 👈
 
 In this community call we covered another exciting week of happenings: [Tesla's $1.5 Billion investment in Bitcoin](https://www.sec.gov/ix?doc=/Archives/edgar/data/1318605/000156459021004599/tsla-10k_20201231.htm), [Bytetree's BOLD investment strategy](https://mailchi.mp/bytetree/bitcoin-gold-bold), [Taproot activation settled on BIP8](https://bitcoinops.org/en/newsletters/2021/02/10/), [geth's upcoming breaking change on the rpc layer](https://twitter.com/peter_szilagyi/status/1359503621826764805), [shady shady 1inch.exchange](https://twitter.com/brockjelmore/status/1354488170000355328), [xmr.to closure](https://xmr.to/blog/job-done) and [dexfairy.com](https://dexfairy.com/).
