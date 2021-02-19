@@ -21,7 +21,7 @@ The OpenDEX Daemon ([`opendexd`](https://github.com/opendexnetwork/opendexd)) is
 ## Support & Community
 
 * [Contribute](/docs/contribute.md)!
-* Support and development-related questions are welcome on our [Discord](https://discord.gg/RnXFHpn)!
+* Support and development-related questions are welcome on our [Discord](https://discord.gg/aS5RMchDrU)!
 
 ## Help us to improve!
 

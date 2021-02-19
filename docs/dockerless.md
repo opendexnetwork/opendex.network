@@ -126,7 +126,7 @@ disable = true
 
 For convenience, consider adding `alias opendex-cli='/home/opendexd/opendexd/bin/opendex-cli -p 8886'` to the opendexd user's `.bashrc` and source it. Then restart `opendexd` once (e.g. with `systemctl restart opendexd`) and try running `opendex-cli getinfo`, which should return with an overview of opendexd's, as well as lnd's and connext status.
 
-Ping us in the help channel of our [Discord server](https://discord.gg/RnXFHpn) for support.
+Ping us in the help channel of our [Discord server](https://discord.gg/aS5RMchDrU) for support.
 
 # Tips 'n Tricks
 
