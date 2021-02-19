@@ -14,7 +14,7 @@ This guide is written for anyone looking to run a opendex liquidity provider set
 1. **Simnet**. `Status: down` until further notice
 2. **Testnet**. `Status: up | Required CPUs: 2 for light, 4 for full | RAM: 2GB for light, 16GB for full | Disk: 1GB for light, 200GB for full | Initial Sync Time: 15 mins for light, 24h for full`
 
-   bitcoin testnet 3, litecoin testnet 4, ethereum rinkeby. Faucets: [t-BTC](https://coinfaucet.eu/en/btc-testnet/), [t-LTC](https://testnet.help/en/ltcfaucet/testnet), [t-ETH 1](https://faucet.rinkeby.io/) or [2](https://testnet.help/en/ethfaucet/rinkeby). If you need help or some testnet coins, hit us up on [Discord](https://discord.gg/RnXFHpn)!
+   bitcoin testnet 3, litecoin testnet 4, ethereum rinkeby. Faucets: [t-BTC](https://coinfaucet.eu/en/btc-testnet/), [t-LTC](https://testnet.help/en/ltcfaucet/testnet), [t-ETH 1](https://faucet.rinkeby.io/) or [2](https://testnet.help/en/ethfaucet/rinkeby). If you need help or some testnet coins, hit us up on [Discord](https://discord.gg/aS5RMchDrU)!
 
 3. **Mainnet**. `Status: down | Required CPUs: 2 for light, 4 for full | RAM: 2GB for light, 16GB for full | Disk: 1GB for light, 1TB for full | Initial Sync Time: 30 mins for light, 72h for full`
 
@@ -335,7 +335,7 @@ Check the official [README](https://github.com/opendexnetwork/market-maker-bot/b
 
 ## Report Issues
 
-Please give us feedback and report bugs by running `report` from within `opendex ctl` or join our dedicated "-help" channel on [Discord](https://discord.gg/RnXFHpn)!
+Please give us feedback and report bugs by running `report` from within `opendex ctl` or join our dedicated "-help" channel on [Discord](https://discord.gg/aS5RMchDrU)!
 
 ## Tips 'n Tricks
 
