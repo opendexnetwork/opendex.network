@@ -8,6 +8,10 @@ This section contains video recordings of OpenDEX community calls, explainers, g
 * Time and day of the call: 18:00 UTC, every Wednesday
 * Discussions are recorded and uploaded here
 
+### Community Call \#16 \(2021-02-24\) 👉 [Video](https://youtu.be/zpwiZlbRRbs) 👈
+
+In this community call we covered the last piece of the puzzle missing for taproot activation on bitcoin: [LOT=true vs. LOT=false](https://bitcoinmagazine.com/articles/lottrue-or-lotfalse-this-is-the-last-hurdle-before-taproot-activation), [the new lnd 0.12.1 release](https://github.com/lightningnetwork/lnd/releases/tag/v0.12.1-beta) which fixes a nasty crash, a demo of the new setup flow in our latest [OpenDEX Desktop App Testnet release](https://github.com/opendexnetwork/opendex-desktop/releases/tag/v1.0.0-testnet.7) and saw a pretty cool demo of an upcoming feature for Boltz, which not only makes it compatibly with virtually all mobile ethereum wallets, but also doesn't require you to hold ETH to do swaps with an ERC20 asset like USDT! You can already try it out at [testnet.boltz.exchange](https://testnet.boltz.exchange/) - dope! 🌿 
+
 ### Community Call \#15 \(2021-02-17\) 👉 [NO Video, sorry!]() 👈
 
 In this community call we covered another exciting week of happenings: [Microstrategy raising even moar money to buy Bitcoin](https://www.microstrategy.com/en/investor-relations/press/microstrategy-announces-proposed-private-offering-of-600m-of-convertible-senior-notes), [a new proposal how to offer escrow services on lightning and hold fees](https://bitcoinops.org/en/newsletters/2021/02/17/) based on a post-taproot feature called [PTLCs](https://bitcoinops.org/en/topics/ptlc/) (a more private & efficient replacment for HTLCs), our [👉 website re-write 👈 (check it out!)](https://opendex.network/), [all-new OpenDEX Destkop Release for Windows 🎉](https://github.com/opendexnetwork/opendex-desktop/releases/tag/v1.0.0-testnet.1), also some of you asked me to link this pretty stats page [coin.dance](https://coin.dance/). Apologies for the missing recording, our bad ✌️
