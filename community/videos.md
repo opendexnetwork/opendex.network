@@ -8,6 +8,18 @@ This section contains video recordings of OpenDEX community calls, explainers, g
 * Time and day of the call: 18:00 UTC, every Wednesday
 * Discussions are recorded and uploaded here
 
+### Community Call \#18 \(2021-03-18\) 👉 [Video](https://youtu.be/oB3BeDNtN7g) 👈
+
+In this exciting community call we covered the [troll title changes at Tesla (Master of Coin!) 😹](https://www.sec.gov/Archives/edgar/data/0001318605/000156459021012981/tsla-8k_20210315.htm), the new taproot activation alternative [speedy trial](https://bitcoinmagazine.com/technical/discussing-taproot-activation-through-speedy-trial) that could bring us taproot in 2021 🤯, the VERY different and entirely [developer driven upgrade approach on ethereum](https://www.coindesk.com/ethereum-proof-of-stake-sooner-than-you-think), that in some (admittedly rare) circumstances [lightning funding transactions are still prone to transaction malleability and thus loss of funds](https://bitcoinops.org/en/newsletters/2021/03/17/) and spend the rest of the call wrapping our head around RGB 🌈, shout-out to Maxim from the RGB Team patiently explaining and answering questions and stay tuned about how we will work together to make a lightning-based DEX Standard a reality!
+
+Check out these links to learn more about RGB or even get your hands dirty and try it out:
+* Project Page: https://rgb-org.github.io
+* FAQs: https://www.rgbfaq.com
+* Telegram: https://t.me/rgbtelegram
+* GitHub: https://github.com/LNP-BP
+* Docker Containers (CLI ftw!): https://github.com/LNP-BP/docker
+* MyCitadel RGB-enabled iOS Wallet: https://www.mycitadel.io
+
 ### Community Call \#17 \(2021-03-02\) 👉 [NO Video, sorry!]() 👈
 
 In this community call we covered [the continued institutional flow into Bitcoin](https://mailchi.mp/bytetree/bitcoin-institutional-flows-are-a-game-changer), [the new major geth 1.10 release](https://github.com/ethereum/go-ethereum/releases/tag/v1.10.0) which dramatically speeds up accessing ethereum state (out of experience we can't recommend to upgrade just yet though), [another improvement proposal for a BIP70 successor](https://bitcoinops.org/en/newsletters/2021/03/03/), [I2P (an alternative to Tor) support in Bitcoin Core](https://github.com/bitcoin/bitcoin/pull/20685) ([here](https://geti2p.net/en/comparison/tor) you can learn more about the differences between I2P and Tor), the [RGB MyCitadel iOS App 🌈](https://github.com/mycitadel/mycitadel-node) (get a basic overview of RGB [here](https://www.rgbfaq.com/faq), but as promised we'll cover RGB in greater detail in next week's call and finally saw the [new update feature of the OpenDEX Desktop App](https://github.com/opendexnetwork/opendex-desktop/releases/tag/v1.0.0-testnet.10) and went through how arbitrage incentivizes liquidity providers to offer liquidity on the OpenDEX network, how it works in practice and why leveraging arbitrage with CEXes to incentivize liquidity provision on OpenDEX is only really possible because of instant finality of trades. Apologies for the missing recording, we'll have a backup recording next week ✌️
