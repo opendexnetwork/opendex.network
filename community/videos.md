@@ -10,7 +10,7 @@ This section contains video recordings of OpenDEX community calls, explainers, g
 
 ### Community Call \#18 \(2021-03-18\) 👉 [Video](https://youtu.be/oB3BeDNtN7g) 👈
 
-In this exciting community call we covered the [troll title changes at Tesla (Master of Coin!) 😹](https://www.sec.gov/Archives/edgar/data/0001318605/000156459021012981/tsla-8k_20210315.htm), the new taproot activation alternative [speedy trial](https://bitcoinmagazine.com/technical/discussing-taproot-activation-through-speedy-trial) that could bring us taproot in 2021 🤯, the VERY different and entirely [developer driven upgrade approach on ethereum](https://www.coindesk.com/ethereum-proof-of-stake-sooner-than-you-think), that in some (admittedly rare) circumstances [lightning funding transactions are still prone to transaction malleability and thus loss of funds](https://bitcoinops.org/en/newsletters/2021/03/17/) and spend the rest of the call wrapping our head around RGB 🌈, shout-out to Maxim from the RGB Team patiently explaining and answering questions. Stay tuned about how we will work together with RGB to make a lightning-based DEX Standard a reality!
+In this exciting community call we covered the [troll title changes at Tesla (Master of Coin!) 😹](https://www.sec.gov/Archives/edgar/data/0001318605/000156459021012981/tsla-8k_20210315.htm), the new taproot activation alternative [speedy trial](https://bitcoinmagazine.com/technical/discussing-taproot-activation-through-speedy-trial) that could bring us taproot in 2021 🤯, the VERY different and entirely [developer driven upgrade approach on ethereum](https://www.coindesk.com/ethereum-proof-of-stake-sooner-than-you-think), that in some (admittedly rare) circumstances [lightning funding transactions are still prone to transaction malleability and thus loss of funds](https://bitcoinops.org/en/newsletters/2021/03/17/) and spend the rest of the call wrapping our head around RGB 🌈, shout-out to Maxim from the RGB Team patiently explaining and answering questions and stay tuned about how we will work together to make a lightning-based DEX Standard a reality!
 
 Check out these links to learn more about RGB or even get your hands dirty and try it out:
 * Project Page: https://rgb-org.github.io
@@ -19,7 +19,6 @@ Check out these links to learn more about RGB or even get your hands dirty and t
 * GitHub: https://github.com/LNP-BP
 * Docker Containers (CLI ftw!): https://github.com/LNP-BP/docker
 * MyCitadel RGB-enabled iOS Wallet: https://www.mycitadel.io
-
 
 ### Community Call \#17 \(2021-03-02\) 👉 [NO Video, sorry!]() 👈
 
