@@ -8,6 +8,12 @@ This section contains video recordings of OpenDEX community calls, explainers, g
 * Time and day of the call: 18:00 UTC, every Wednesday
 * Discussions are recorded and uploaded here
 
+### Community Call \#19 \(2021-03-24\) 👉 [Video](https://youtu.be/EGmR676jMt8) 👈
+
+In this call [we laughed](https://pbs.twimg.com/media/ExO8ELWXEAUoa81?format=jpg&name=small) once more at the [ECB's claim not to be responsible for increasing econimic inequality](https://twitter.com/ecb/status/1374647699480453121) (read about the Cantillon effect [here](https://www.austriancenter.com/cantillon-effect-populism/)), [Tesla now **accepting** Bitcoin](https://twitter.com/elonmusk/status/1374617643446063105) and that by running their own merchant software and Bitcoin nodes, [Breez launching a built-in podcast platform](https://medium.com/breez-technology/podcasts-on-breez-streaming-sats-for-streaming-ideas-d9361ae8a627), how [Taproot may handle Quantum Computers](https://bitcoinops.org/en/newsletters/2021/03/24/) and our main topic: [UniSwap V3](https://uniswap.org/blog/uniswap-v3/).
+
+Tl;dr: UniSwap V3 is great and fixes a couple of inefficiencies of V2, but OpenDEX still keeps most of its advantages over UniSwap with the major one being: it's truly cross-chain. Native BTC, native ETH, no wrapping.
+
 ### Community Call \#18 \(2021-03-17\) 👉 [Video](https://youtu.be/oB3BeDNtN7g) 👈
 
 In this exciting community call we covered the [troll title changes at Tesla (Master of Coin!) 😹](https://www.sec.gov/Archives/edgar/data/0001318605/000156459021012981/tsla-8k_20210315.htm), the new taproot activation alternative [speedy trial](https://bitcoinmagazine.com/technical/discussing-taproot-activation-through-speedy-trial) that could bring us taproot in 2021 🤯, the VERY different and entirely [developer driven upgrade approach on ethereum](https://www.coindesk.com/ethereum-proof-of-stake-sooner-than-you-think), that in some (admittedly rare) circumstances [lightning funding transactions are still prone to transaction malleability and thus loss of funds](https://bitcoinops.org/en/newsletters/2021/03/17/) and spend the rest of the call wrapping our head around RGB 🌈, shout-out to Maxim from the RGB Team patiently explaining and answering questions and stay tuned about how we will work together to make a lightning-based DEX Standard a reality!
