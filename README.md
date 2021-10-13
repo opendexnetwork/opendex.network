@@ -1,6 +1,6 @@
 # 👋-Hello!
 
-## ⚠️ THIS PROJECT IS CURRENTLY NOT ACTIVELY MAINTAINED ⚠️
+## ⚠️ NOT ACTIVELY MAINTAINED ⚠️
 
 ![](.gitbook/assets/logo.png)
 
