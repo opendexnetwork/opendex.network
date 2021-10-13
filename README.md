@@ -8,7 +8,7 @@
 
 ## Get Started
 
-[🔁 **Swap privately & securely** via the easy-to-use web app 🖥️](https://boltz.exchange/)
+[🔁 **Swap privately & securely** via the easy-to-use web app 🖥️](https://opendex.app)
 
 [🌊 **Provide liquidity & earn** by running a node 👨‍💻](/docs/liquidity-providers.md)
 
